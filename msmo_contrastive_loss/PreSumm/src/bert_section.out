@@ -1,0 +1,1569 @@
+[2021-11-14 01:56:41,134 INFO]  Starting process pid: 38650  
+[2021-11-14 01:56:41,136 INFO]  Starting process pid: 38651  
+[2021-11-14 01:56:41,139 INFO]  Starting process pid: 38652  
+[2021-11-14 01:56:41,142 INFO]  Starting process pid: 38653  
+[2021-11-14 01:56:42,001 INFO] Namespace(accum_count=5, alpha=0.6, batch_size=3000, beam_size=5, bert_data_path='/scratch/full_data_pt/', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1, 2, 3], label_smoothing=0.1, large=False, load_from_extractive='', log_file='log', lr=1, lr_bert=0.002, lr_dec=0.02, max_grad_norm=0, max_length=150, max_pos=512, max_tgt_len=140, min_length=15, mode='train', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=50, report_rouge=True, result_path='../results/cnndm', save_checkpoint_steps=2000, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=False, test_batch_size=200, test_from='', test_start_from=-1, train_from='', train_steps=200000, use_bert_emb=True, use_interval=True, visible_gpus='0,1,2,3', warmup_steps=8000, warmup_steps_bert=16000, warmup_steps_dec=8000, world_size=4)
+[2021-11-14 01:56:42,001 INFO] Device ID 0
+[2021-11-14 01:56:42,001 INFO] Device cuda
+[2021-11-14 01:56:43,609 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-11-14 01:56:43,609 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-11-14 01:56:43,609 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-11-14 01:56:43,610 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-11-14 01:56:43,610 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-11-14 01:56:43,610 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-11-14 01:56:43,610 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-11-14 01:56:43,611 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-11-14 01:56:43,611 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-11-14 01:56:43,611 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-11-14 01:56:43,611 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-11-14 01:56:43,612 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-11-14 01:56:58,472 INFO] AbsSummarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(512, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (image_transform_layer): Linear(in_features=4096, out_features=768, bias=True)
+  (oscar_emb): Embedding(3, 768, padding_idx=2)
+  (decoder): TransformerDecoder(
+    (embeddings): Embedding(30522, 768, padding_idx=0)
+    (pos_emb): PositionalEncoding(
+      (dropout): Dropout(p=0.2)
+    )
+    (transformer_layers): ModuleList(
+      (0): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (img_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.2)
+          (dropout_2): Dropout(p=0.2)
+        )
+        (layer_norm_1): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_img): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.2)
+      )
+      (1): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (img_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.2)
+          (dropout_2): Dropout(p=0.2)
+        )
+        (layer_norm_1): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_img): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.2)
+      )
+      (2): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (img_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.2)
+          (dropout_2): Dropout(p=0.2)
+        )
+        (layer_norm_1): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_img): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.2)
+      )
+      (3): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (img_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.2)
+          (dropout_2): Dropout(p=0.2)
+        )
+        (layer_norm_1): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_img): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.2)
+      )
+      (4): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (img_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.2)
+          (dropout_2): Dropout(p=0.2)
+        )
+        (layer_norm_1): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_img): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.2)
+      )
+      (5): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (img_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.2)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.2)
+          (dropout_2): Dropout(p=0.2)
+        )
+        (layer_norm_1): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (layer_norm_img): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.2)
+      )
+    )
+    (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+  )
+  (generator): Sequential(
+    (0): Linear(in_features=768, out_features=30522, bias=True)
+    (1): LogSoftmax()
+  )
+)
+[2021-11-14 01:56:59,530 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-11-14 01:56:59,569 INFO] * number of parameters: 197554746
+[2021-11-14 01:56:59,569 INFO] Start training...
+[2021-11-14 01:56:59,606 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-11-14 01:56:59,704 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-11-14 01:56:59,808 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-11-14 01:57:09,115 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 01:57:10,190 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 02:07:54,596 INFO] Step 50/200000; acc:   0.03; ppl: 136678.61; xent: 11.83; lr: 0.00000005;   0/607 tok/s;    644 sec
+[0, 1, 2, 3]
+gpu_rank 1
+gpu_rank 1
+[0, 1, 2, 3]
+gpu_rank 2
+gpu_rank 2
+[0, 1, 2, 3]
+gpu_rank 0
+gpu_rank 0
+[0, 1, 2, 3]
+gpu_rank 3
+gpu_rank 3
+[2021-11-14 02:17:39,202 INFO] Step 100/200000; acc:   0.04; ppl: 6822.91; xent: 8.83; lr: 0.00000010;   0/621 tok/s;   1229 sec
+[2021-11-14 02:24:13,844 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 02:24:18,423 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 02:26:35,251 INFO] Step 150/200000; acc:   1.63; ppl: 2026.83; xent: 7.61; lr: 0.00000015;   0/6015 tok/s;   1765 sec
+[2021-11-14 02:35:55,434 INFO] Step 200/200000; acc:   3.38; ppl: 1360.48; xent: 7.22; lr: 0.00000020;   0/6150 tok/s;   2325 sec
+[2021-11-14 02:45:01,856 INFO] Step 250/200000; acc:   4.24; ppl: 1034.70; xent: 6.94; lr: 0.00000025;   0/5478 tok/s;   2872 sec
+[2021-11-14 02:49:57,748 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 02:50:02,552 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 02:54:12,363 INFO] Step 300/200000; acc:   4.52; ppl: 801.42; xent: 6.69; lr: 0.00000030;   0/5952 tok/s;   3422 sec
+[2021-11-14 03:02:35,715 INFO] Step 350/200000; acc:   4.52; ppl: 683.03; xent: 6.53; lr: 0.00000035;   0/5690 tok/s;   3926 sec
+[2021-11-14 03:10:42,331 INFO] Step 400/200000; acc:   4.91; ppl: 579.66; xent: 6.36; lr: 0.00000040;   0/5467 tok/s;   4412 sec
+[2021-11-14 03:14:13,415 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 03:14:17,842 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 03:19:12,201 INFO] Step 450/200000; acc:   5.35; ppl: 497.19; xent: 6.21; lr: 0.00000044;   0/6280 tok/s;   4922 sec
+[2021-11-14 03:26:46,216 INFO] Step 500/200000; acc:  10.02; ppl: 449.54; xent: 6.11; lr: 0.00000049;   0/4925 tok/s;   5376 sec
+[2021-11-14 03:33:57,965 INFO] Step 550/200000; acc:  10.57; ppl: 395.26; xent: 5.98; lr: 0.00000054;   0/4559 tok/s;   5808 sec
+[2021-11-14 03:34:46,089 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 03:34:47,158 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 03:40:25,050 INFO] Step 600/200000; acc:  11.97; ppl: 330.97; xent: 5.80; lr: 0.00000059;   0/5560 tok/s;   6195 sec
+[2021-11-14 03:46:32,137 INFO] Step 650/200000; acc:  12.57; ppl: 290.11; xent: 5.67; lr: 0.00000064;   0/6297 tok/s;   6562 sec
+[2021-11-14 03:52:02,725 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 03:52:07,257 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 03:53:00,816 INFO] Step 700/200000; acc:  13.30; ppl: 272.06; xent: 5.61; lr: 0.00000069;   0/5470 tok/s;   6951 sec
+[2021-11-14 03:59:17,299 INFO] Step 750/200000; acc:  14.09; ppl: 244.33; xent: 5.50; lr: 0.00000074;   0/5816 tok/s;   7327 sec
+[2021-11-14 04:05:23,013 INFO] Step 800/200000; acc:  14.50; ppl: 233.13; xent: 5.45; lr: 0.00000079;   0/5011 tok/s;   7693 sec
+[2021-11-14 04:09:49,802 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 04:09:54,296 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 04:12:04,310 INFO] Step 850/200000; acc:  15.46; ppl: 201.53; xent: 5.31; lr: 0.00000084;   0/5808 tok/s;   8094 sec
+[2021-11-14 04:18:10,350 INFO] Step 900/200000; acc:  15.76; ppl: 193.93; xent: 5.27; lr: 0.00000089;   0/5463 tok/s;   8460 sec
+[2021-11-14 04:24:08,587 INFO] Step 950/200000; acc:  16.45; ppl: 178.13; xent: 5.18; lr: 0.00000094;   0/5974 tok/s;   8818 sec
+[2021-11-14 04:26:50,799 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 04:26:55,260 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 04:30:38,489 INFO] Step 1000/200000; acc:  16.96; ppl: 168.36; xent: 5.13; lr: 0.00000099;   0/6495 tok/s;   9208 sec
+[2021-11-14 04:36:51,331 INFO] Step 1050/200000; acc:  17.84; ppl: 155.41; xent: 5.05; lr: 0.00000104;   0/5140 tok/s;   9581 sec
+[2021-11-14 04:42:54,805 INFO] Step 1100/200000; acc:  17.93; ppl: 154.09; xent: 5.04; lr: 0.00000109;   0/5549 tok/s;   9945 sec
+[2021-11-14 04:44:36,641 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 04:44:37,696 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 04:49:41,489 INFO] Step 1150/200000; acc:  18.40; ppl: 146.27; xent: 4.99; lr: 0.00000114;   0/5506 tok/s;  10351 sec
+[2021-11-14 04:55:41,657 INFO] Step 1200/200000; acc:  18.96; ppl: 138.46; xent: 4.93; lr: 0.00000119;   0/6227 tok/s;  10712 sec
+[2021-11-14 05:01:47,411 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 05:01:51,998 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 05:02:17,908 INFO] Step 1250/200000; acc:  19.65; ppl: 133.67; xent: 4.90; lr: 0.00000124;   0/4973 tok/s;  11108 sec
+[2021-11-14 05:08:27,528 INFO] Step 1300/200000; acc:  19.09; ppl: 130.06; xent: 4.87; lr: 0.00000128;   0/6461 tok/s;  11477 sec
+[2021-11-14 05:14:34,561 INFO] Step 1350/200000; acc:  20.11; ppl: 121.49; xent: 4.80; lr: 0.00000133;   0/5577 tok/s;  11844 sec
+[2021-11-14 05:19:28,428 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 05:19:33,053 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 05:21:14,683 INFO] Step 1400/200000; acc:  20.62; ppl: 121.47; xent: 4.80; lr: 0.00000138;   0/4867 tok/s;  12245 sec
+[2021-11-14 05:27:17,504 INFO] Step 1450/200000; acc:  20.48; ppl: 117.32; xent: 4.76; lr: 0.00000143;   0/5213 tok/s;  12607 sec
+[2021-11-14 05:33:33,411 INFO] Step 1500/200000; acc:  20.78; ppl: 114.70; xent: 4.74; lr: 0.00000148;   0/5316 tok/s;  12983 sec
+[2021-11-14 05:37:00,919 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 05:37:05,703 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 05:40:06,951 INFO] Step 1550/200000; acc:  21.72; ppl: 106.27; xent: 4.67; lr: 0.00000153;   0/3748 tok/s;  13377 sec
+[2021-11-14 05:46:15,648 INFO] Step 1600/200000; acc:  21.04; ppl: 110.30; xent: 4.70; lr: 0.00000158;   0/3628 tok/s;  13746 sec
+[2021-11-14 05:52:28,371 INFO] Step 1650/200000; acc:  22.04; ppl: 100.20; xent: 4.61; lr: 0.00000163;   0/3587 tok/s;  14118 sec
+[2021-11-14 05:54:40,755 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 05:54:41,700 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 05:59:08,587 INFO] Step 1700/200000; acc:  22.73; ppl: 96.35; xent: 4.57; lr: 0.00000168;   0/5070 tok/s;  14518 sec
+[2021-11-14 06:05:19,513 INFO] Step 1750/200000; acc:  22.91; ppl: 93.29; xent: 4.54; lr: 0.00000173;   0/5664 tok/s;  14889 sec
+[2021-11-14 06:11:24,344 INFO] Step 1800/200000; acc:  22.85; ppl: 92.46; xent: 4.53; lr: 0.00000178;   0/5459 tok/s;  15254 sec
+[2021-11-14 06:11:52,116 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 06:11:56,710 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 06:17:57,627 INFO] Step 1850/200000; acc:  23.18; ppl: 89.16; xent: 4.49; lr: 0.00000183;   0/5519 tok/s;  15647 sec
+[2021-11-14 06:24:28,703 INFO] Step 1900/200000; acc:  23.50; ppl: 86.61; xent: 4.46; lr: 0.00000188;   0/5612 tok/s;  16039 sec
+[2021-11-14 06:30:16,086 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 06:30:20,555 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 06:31:30,037 INFO] Step 1950/200000; acc:  23.55; ppl: 85.78; xent: 4.45; lr: 0.00000193;   0/5133 tok/s;  16460 sec
+[2021-11-14 06:37:34,449 INFO] Step 2000/200000; acc:  24.07; ppl: 82.17; xent: 4.41; lr: 0.00000198;   0/5853 tok/s;  16824 sec
+[2021-11-14 06:37:34,454 INFO] Saving checkpoint /scratch/new_msmo/model_step_2000.pt
+[2021-11-14 06:43:47,447 INFO] Step 2050/200000; acc:  24.94; ppl: 79.38; xent: 4.37; lr: 0.00000203;   0/5366 tok/s;  17197 sec
+[2021-11-14 06:48:00,473 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 06:48:04,938 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 06:50:33,049 INFO] Step 2100/200000; acc:  24.81; ppl: 75.49; xent: 4.32; lr: 0.00000208;   0/5240 tok/s;  17603 sec
+[2021-11-14 06:56:47,452 INFO] Step 2150/200000; acc:  24.14; ppl: 78.49; xent: 4.36; lr: 0.00000212;   0/5512 tok/s;  17977 sec
+[2021-11-14 07:03:03,801 INFO] Step 2200/200000; acc:  25.40; ppl: 74.17; xent: 4.31; lr: 0.00000217;   0/5734 tok/s;  18354 sec
+[2021-11-14 07:05:47,269 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 07:05:48,348 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 07:09:45,500 INFO] Step 2250/200000; acc:  24.90; ppl: 72.26; xent: 4.28; lr: 0.00000222;   0/6481 tok/s;  18755 sec
+[2021-11-14 07:16:05,828 INFO] Step 2300/200000; acc:  25.62; ppl: 70.00; xent: 4.25; lr: 0.00000227;   0/6099 tok/s;  19136 sec
+[2021-11-14 07:22:15,215 INFO] Step 2350/200000; acc:  25.10; ppl: 70.58; xent: 4.26; lr: 0.00000232;   0/5635 tok/s;  19505 sec
+[2021-11-14 07:23:39,817 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 07:23:44,351 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 07:29:10,230 INFO] Step 2400/200000; acc:  25.47; ppl: 67.46; xent: 4.21; lr: 0.00000237;   0/4887 tok/s;  19920 sec
+[2021-11-14 07:35:30,487 INFO] Step 2450/200000; acc:  25.87; ppl: 67.11; xent: 4.21; lr: 0.00000242;   0/5689 tok/s;  20300 sec
+[2021-11-14 07:41:46,208 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 07:41:50,916 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 07:42:30,322 INFO] Step 2500/200000; acc:  25.50; ppl: 68.34; xent: 4.22; lr: 0.00000247;   0/5685 tok/s;  20720 sec
+[2021-11-14 07:48:42,047 INFO] Step 2550/200000; acc:  25.61; ppl: 68.42; xent: 4.23; lr: 0.00000252;   0/5761 tok/s;  21092 sec
+[2021-11-14 07:54:55,429 INFO] Step 2600/200000; acc:  26.00; ppl: 65.26; xent: 4.18; lr: 0.00000257;   0/5856 tok/s;  21465 sec
+[2021-11-14 07:59:33,174 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 07:59:37,897 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 08:01:38,603 INFO] Step 2650/200000; acc:  25.65; ppl: 66.08; xent: 4.19; lr: 0.00000262;   0/5311 tok/s;  21868 sec
+[2021-11-14 08:07:55,146 INFO] Step 2700/200000; acc:  26.89; ppl: 59.45; xent: 4.09; lr: 0.00000267;   0/5361 tok/s;  22245 sec
+[2021-11-14 08:14:17,195 INFO] Step 2750/200000; acc:  27.31; ppl: 58.84; xent: 4.07; lr: 0.00000272;   0/5757 tok/s;  22627 sec
+[2021-11-14 08:17:42,847 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 08:17:43,802 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 08:21:10,113 INFO] Step 2800/200000; acc:  26.89; ppl: 59.69; xent: 4.09; lr: 0.00000277;   0/5328 tok/s;  23040 sec
+[2021-11-14 08:27:24,638 INFO] Step 2850/200000; acc:  27.01; ppl: 58.87; xent: 4.08; lr: 0.00000282;   0/6054 tok/s;  23414 sec
+[2021-11-14 08:33:40,984 INFO] Step 2900/200000; acc:  27.28; ppl: 56.78; xent: 4.04; lr: 0.00000287;   0/5261 tok/s;  23791 sec
+[2021-11-14 08:35:40,526 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 08:35:45,097 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 08:40:33,173 INFO] Step 2950/200000; acc:  27.54; ppl: 57.24; xent: 4.05; lr: 0.00000292;   0/3629 tok/s;  24203 sec
+[2021-11-14 08:46:53,264 INFO] Step 3000/200000; acc:  26.92; ppl: 57.06; xent: 4.04; lr: 0.00000296;   0/5380 tok/s;  24583 sec
+[2021-11-14 08:53:22,040 INFO] Step 3050/200000; acc:  27.82; ppl: 54.62; xent: 4.00; lr: 0.00000301;   0/1364 tok/s;  24972 sec
+[2021-11-14 08:53:34,053 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 08:53:38,746 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 08:59:49,359 INFO] Step 3100/200000; acc:  28.74; ppl: 50.36; xent: 3.92; lr: 0.00000306;   0/3417 tok/s;  25359 sec
+[2021-11-14 09:06:12,627 INFO] Step 3150/200000; acc:  27.83; ppl: 53.17; xent: 3.97; lr: 0.00000311;   0/4082 tok/s;  25742 sec
+[2021-11-14 09:11:30,432 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 09:11:35,010 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 09:12:54,833 INFO] Step 3200/200000; acc:  28.77; ppl: 51.51; xent: 3.94; lr: 0.00000316;   0/4723 tok/s;  26145 sec
+[2021-11-14 09:19:10,319 INFO] Step 3250/200000; acc:  28.17; ppl: 51.14; xent: 3.93; lr: 0.00000321;   0/5449 tok/s;  26520 sec
+[2021-11-14 09:25:41,684 INFO] Step 3300/200000; acc:  28.62; ppl: 49.70; xent: 3.91; lr: 0.00000326;   0/3538 tok/s;  26912 sec
+[2021-11-14 09:29:40,308 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 09:29:41,366 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 09:32:28,780 INFO] Step 3350/200000; acc:  29.27; ppl: 45.83; xent: 3.82; lr: 0.00000331;   0/5678 tok/s;  27319 sec
+[2021-11-14 09:38:49,270 INFO] Step 3400/200000; acc:  28.86; ppl: 47.09; xent: 3.85; lr: 0.00000336;   0/5600 tok/s;  27699 sec
+[2021-11-14 09:45:14,308 INFO] Step 3450/200000; acc:  28.92; ppl: 46.82; xent: 3.85; lr: 0.00000341;   0/5127 tok/s;  28084 sec
+[2021-11-14 09:47:58,033 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 09:48:02,638 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 09:52:20,667 INFO] Step 3500/200000; acc:  29.31; ppl: 46.01; xent: 3.83; lr: 0.00000346;   0/5190 tok/s;  28511 sec
+[2021-11-14 09:58:43,594 INFO] Step 3550/200000; acc:  28.75; ppl: 47.06; xent: 3.85; lr: 0.00000351;   0/5968 tok/s;  28893 sec
+[2021-11-14 10:05:08,655 INFO] Step 3600/200000; acc:  29.38; ppl: 45.41; xent: 3.82; lr: 0.00000356;   0/5455 tok/s;  29279 sec
+[2021-11-14 10:06:17,893 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 10:06:22,403 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 10:11:59,648 INFO] Step 3650/200000; acc:  30.20; ppl: 41.22; xent: 3.72; lr: 0.00000361;   0/5130 tok/s;  29690 sec
+[2021-11-14 10:18:22,446 INFO] Step 3700/200000; acc:  29.88; ppl: 43.62; xent: 3.78; lr: 0.00000366;   0/5881 tok/s;  30072 sec
+[2021-11-14 10:24:16,873 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 10:24:21,591 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 10:25:13,538 INFO] Step 3750/200000; acc:  29.77; ppl: 43.75; xent: 3.78; lr: 0.00000371;   0/6357 tok/s;  30483 sec
+[2021-11-14 10:31:51,664 INFO] Step 3800/200000; acc:  30.34; ppl: 42.27; xent: 3.74; lr: 0.00000376;   0/5571 tok/s;  30882 sec
+[2021-11-14 10:38:20,223 INFO] Step 3850/200000; acc:  30.59; ppl: 40.67; xent: 3.71; lr: 0.00000380;   0/5758 tok/s;  31270 sec
+[2021-11-14 10:42:47,046 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 10:42:48,067 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 10:45:03,605 INFO] Step 3900/200000; acc:  30.22; ppl: 41.87; xent: 3.73; lr: 0.00000385;   0/5177 tok/s;  31673 sec
+[2021-11-14 10:51:21,747 INFO] Step 3950/200000; acc:  29.36; ppl: 42.44; xent: 3.75; lr: 0.00000390;   0/6331 tok/s;  32052 sec
+[2021-11-14 10:57:44,494 INFO] Step 4000/200000; acc:  30.52; ppl: 41.38; xent: 3.72; lr: 0.00000395;   0/5090 tok/s;  32434 sec
+[2021-11-14 10:57:44,499 INFO] Saving checkpoint /scratch/new_msmo/model_step_4000.pt
+[2021-11-14 11:01:17,278 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 11:01:21,859 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 11:05:06,814 INFO] Step 4050/200000; acc:  31.08; ppl: 39.15; xent: 3.67; lr: 0.00000400;   0/5658 tok/s;  32877 sec
+[2021-11-14 11:11:32,750 INFO] Step 4100/200000; acc:  30.41; ppl: 39.69; xent: 3.68; lr: 0.00000405;   0/4911 tok/s;  33263 sec
+[2021-11-14 11:18:10,752 INFO] Step 4150/200000; acc:  31.81; ppl: 38.13; xent: 3.64; lr: 0.00000410;   0/5323 tok/s;  33661 sec
+[2021-11-14 11:20:22,274 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 11:20:26,746 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 11:25:32,264 INFO] Step 4200/200000; acc:  30.08; ppl: 40.78; xent: 3.71; lr: 0.00000415;   0/6814 tok/s;  34102 sec
+[2021-11-14 11:32:03,907 INFO] Step 4250/200000; acc:  32.11; ppl: 36.11; xent: 3.59; lr: 0.00000420;   0/5778 tok/s;  34494 sec
+[2021-11-14 11:38:43,401 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 11:38:48,120 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 11:39:05,786 INFO] Step 4300/200000; acc:  30.90; ppl: 38.42; xent: 3.65; lr: 0.00000425;   0/6077 tok/s;  34916 sec
+[2021-11-14 11:45:33,541 INFO] Step 4350/200000; acc:  30.56; ppl: 37.87; xent: 3.63; lr: 0.00000430;   0/6048 tok/s;  35303 sec
+[2021-11-14 11:51:59,808 INFO] Step 4400/200000; acc:  31.81; ppl: 36.89; xent: 3.61; lr: 0.00000435;   0/5613 tok/s;  35690 sec
+[2021-11-14 11:57:34,143 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 11:57:35,137 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 11:59:15,068 INFO] Step 4450/200000; acc:  32.37; ppl: 33.34; xent: 3.51; lr: 0.00000440;   0/4047 tok/s;  36125 sec
+[2021-11-14 12:05:36,519 INFO] Step 4500/200000; acc:  32.11; ppl: 34.50; xent: 3.54; lr: 0.00000445;   0/4188 tok/s;  36506 sec
+[2021-11-14 12:11:59,727 INFO] Step 4550/200000; acc:  31.18; ppl: 36.26; xent: 3.59; lr: 0.00000450;   0/4970 tok/s;  36890 sec
+[2021-11-14 12:15:44,380 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 12:15:49,158 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 12:19:03,295 INFO] Step 4600/200000; acc:  32.00; ppl: 34.71; xent: 3.55; lr: 0.00000455;   0/3815 tok/s;  37313 sec
+[2021-11-14 12:25:33,231 INFO] Step 4650/200000; acc:  31.92; ppl: 34.59; xent: 3.54; lr: 0.00000460;   0/3507 tok/s;  37703 sec
+[2021-11-14 12:32:01,217 INFO] Step 4700/200000; acc:  31.73; ppl: 34.71; xent: 3.55; lr: 0.00000464;   0/3672 tok/s;  38091 sec
+[2021-11-14 12:34:35,543 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 12:34:40,182 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 12:39:10,218 INFO] Step 4750/200000; acc:  32.11; ppl: 34.95; xent: 3.55; lr: 0.00000469;   0/4070 tok/s;  38520 sec
+[2021-11-14 12:45:33,714 INFO] Step 4800/200000; acc:  33.18; ppl: 32.91; xent: 3.49; lr: 0.00000474;   0/3140 tok/s;  38904 sec
+[2021-11-14 12:52:02,361 INFO] Step 4850/200000; acc:  32.40; ppl: 33.78; xent: 3.52; lr: 0.00000479;   0/4546 tok/s;  39292 sec
+[2021-11-14 12:53:19,030 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 12:53:23,551 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 12:59:18,420 INFO] Step 4900/200000; acc:  32.09; ppl: 33.69; xent: 3.52; lr: 0.00000484;   0/5967 tok/s;  39728 sec
+[2021-11-14 13:05:56,976 INFO] Step 4950/200000; acc:  32.20; ppl: 33.23; xent: 3.50; lr: 0.00000489;   0/4652 tok/s;  40127 sec
+[2021-11-14 13:12:07,785 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 13:12:08,866 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 13:13:13,943 INFO] Step 5000/200000; acc:  32.57; ppl: 32.00; xent: 3.47; lr: 0.00000494;   0/5619 tok/s;  40564 sec
+[2021-11-14 13:19:38,151 INFO] Step 5050/200000; acc:  32.56; ppl: 32.14; xent: 3.47; lr: 0.00000499;   0/6029 tok/s;  40948 sec
+[2021-11-14 13:26:09,710 INFO] Step 5100/200000; acc:  32.67; ppl: 30.78; xent: 3.43; lr: 0.00000504;   0/5344 tok/s;  41340 sec
+[2021-11-14 13:31:00,641 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 13:31:05,208 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 13:33:39,904 INFO] Step 5150/200000; acc:  32.98; ppl: 31.45; xent: 3.45; lr: 0.00000509;   0/5880 tok/s;  41790 sec
+[2021-11-14 13:40:16,294 INFO] Step 5200/200000; acc:  33.23; ppl: 29.82; xent: 3.40; lr: 0.00000514;   0/5483 tok/s;  42186 sec
+[2021-11-14 13:47:07,080 INFO] Step 5250/200000; acc:  34.60; ppl: 28.23; xent: 3.34; lr: 0.00000519;   0/5511 tok/s;  42597 sec
+[2021-11-14 13:50:21,109 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 13:50:25,961 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 13:54:28,084 INFO] Step 5300/200000; acc:  33.50; ppl: 30.31; xent: 3.41; lr: 0.00000524;   0/5572 tok/s;  43038 sec
+[2021-11-14 14:00:58,441 INFO] Step 5350/200000; acc:  33.19; ppl: 31.49; xent: 3.45; lr: 0.00000529;   0/5869 tok/s;  43428 sec
+[2021-11-14 14:07:30,257 INFO] Step 5400/200000; acc:  33.68; ppl: 29.03; xent: 3.37; lr: 0.00000534;   0/3952 tok/s;  43820 sec
+[2021-11-14 14:09:17,208 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 14:09:21,914 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 14:14:55,398 INFO] Step 5450/200000; acc:  34.16; ppl: 28.78; xent: 3.36; lr: 0.00000539;   0/5738 tok/s;  44265 sec
+[2021-11-14 14:21:30,652 INFO] Step 5500/200000; acc:  33.20; ppl: 30.43; xent: 3.42; lr: 0.00000544;   0/5938 tok/s;  44661 sec
+[2021-11-14 14:28:18,196 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 14:28:19,189 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 14:28:49,639 INFO] Step 5550/200000; acc:  34.42; ppl: 26.70; xent: 3.28; lr: 0.00000548;   0/6224 tok/s;  45099 sec
+[2021-11-14 14:35:16,963 INFO] Step 5600/200000; acc:  33.91; ppl: 27.38; xent: 3.31; lr: 0.00000553;   0/5839 tok/s;  45487 sec
+[2021-11-14 14:41:51,045 INFO] Step 5650/200000; acc:  34.92; ppl: 26.02; xent: 3.26; lr: 0.00000558;   0/5963 tok/s;  45881 sec
+[2021-11-14 14:47:09,527 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 14:47:14,187 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 14:49:22,554 INFO] Step 5700/200000; acc:  34.42; ppl: 26.65; xent: 3.28; lr: 0.00000563;   0/5556 tok/s;  46332 sec
+[2021-11-14 14:55:59,997 INFO] Step 5750/200000; acc:  34.71; ppl: 27.05; xent: 3.30; lr: 0.00000568;   0/5346 tok/s;  46730 sec
+[2021-11-14 15:02:38,111 INFO] Step 5800/200000; acc:  34.94; ppl: 25.89; xent: 3.25; lr: 0.00000573;   0/5115 tok/s;  47128 sec
+[2021-11-14 15:06:33,539 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 15:06:38,339 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 15:10:12,346 INFO] Step 5850/200000; acc:  35.60; ppl: 24.53; xent: 3.20; lr: 0.00000578;   0/5356 tok/s;  47582 sec
+[2021-11-14 15:16:48,713 INFO] Step 5900/200000; acc:  36.69; ppl: 23.12; xent: 3.14; lr: 0.00000583;   0/5721 tok/s;  47979 sec
+[2021-11-14 15:23:34,546 INFO] Step 5950/200000; acc:  36.62; ppl: 23.64; xent: 3.16; lr: 0.00000588;   0/4419 tok/s;  48384 sec
+[2021-11-14 15:25:38,104 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 15:25:42,770 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 15:30:48,980 INFO] Step 6000/200000; acc:  36.84; ppl: 22.21; xent: 3.10; lr: 0.00000593;   0/3777 tok/s;  48819 sec
+[2021-11-14 15:30:48,985 INFO] Saving checkpoint /scratch/new_msmo/model_step_6000.pt
+[2021-11-14 15:37:26,828 INFO] Step 6050/200000; acc:  38.44; ppl: 20.50; xent: 3.02; lr: 0.00000598;   0/3296 tok/s;  49217 sec
+[2021-11-14 15:44:22,100 INFO] Step 6100/200000; acc:  40.01; ppl: 19.18; xent: 2.95; lr: 0.00000603;   0/1445 tok/s;  49632 sec
+[2021-11-14 15:44:37,772 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 15:44:38,875 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 15:51:14,492 INFO] Step 6150/200000; acc:  40.78; ppl: 18.14; xent: 2.90; lr: 0.00000608;   0/5079 tok/s;  50044 sec
+[2021-11-14 15:57:55,626 INFO] Step 6200/200000; acc:  42.63; ppl: 16.50; xent: 2.80; lr: 0.00000613;   0/3524 tok/s;  50445 sec
+[2021-11-14 16:03:32,264 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 16:03:37,042 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 16:05:02,252 INFO] Step 6250/200000; acc:  43.92; ppl: 15.43; xent: 2.74; lr: 0.00000618;   0/3663 tok/s;  50872 sec
+[2021-11-14 16:11:34,248 INFO] Step 6300/200000; acc:  44.21; ppl: 15.62; xent: 2.75; lr: 0.00000623;   0/3759 tok/s;  51264 sec
+[2021-11-14 16:18:11,427 INFO] Step 6350/200000; acc:  45.80; ppl: 14.42; xent: 2.67; lr: 0.00000628;   0/3608 tok/s;  51661 sec
+[2021-11-14 16:22:40,445 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 16:22:45,105 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 16:25:24,653 INFO] Step 6400/200000; acc:  46.63; ppl: 13.59; xent: 2.61; lr: 0.00000632;   0/5892 tok/s;  52095 sec
+[2021-11-14 16:31:55,895 INFO] Step 6450/200000; acc:  47.49; ppl: 13.27; xent: 2.59; lr: 0.00000637;   0/4749 tok/s;  52486 sec
+[2021-11-14 16:38:29,841 INFO] Step 6500/200000; acc:  50.50; ppl: 11.01; xent: 2.40; lr: 0.00000642;   0/4270 tok/s;  52880 sec
+[2021-11-14 16:41:25,817 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 16:41:30,467 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 16:45:54,412 INFO] Step 6550/200000; acc:  48.19; ppl: 12.57; xent: 2.53; lr: 0.00000647;   0/5781 tok/s;  53324 sec
+[2021-11-14 16:52:30,786 INFO] Step 6600/200000; acc:  49.88; ppl: 11.51; xent: 2.44; lr: 0.00000652;   0/6733 tok/s;  53721 sec
+[2021-11-14 16:59:10,083 INFO] Step 6650/200000; acc:  50.15; ppl: 11.39; xent: 2.43; lr: 0.00000657;   0/4860 tok/s;  54120 sec
+[2021-11-14 17:00:23,117 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 17:00:24,194 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 17:06:19,977 INFO] Step 6700/200000; acc:  50.17; ppl: 11.35; xent: 2.43; lr: 0.00000662;   0/5721 tok/s;  54550 sec
+[2021-11-14 17:13:00,490 INFO] Step 6750/200000; acc:  50.29; ppl: 11.27; xent: 2.42; lr: 0.00000667;   0/5261 tok/s;  54950 sec
+[2021-11-14 17:19:59,987 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 17:20:04,647 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 17:20:49,188 INFO] Step 6800/200000; acc:  51.99; ppl: 10.37; xent: 2.34; lr: 0.00000672;   0/5691 tok/s;  55419 sec
+[2021-11-14 17:27:25,548 INFO] Step 6850/200000; acc:  52.51; ppl: 10.13; xent: 2.32; lr: 0.00000677;   0/6078 tok/s;  55815 sec
+[2021-11-14 17:34:06,092 INFO] Step 6900/200000; acc:  53.17; ppl:  9.60; xent: 2.26; lr: 0.00000682;   0/5279 tok/s;  56216 sec
+[2021-11-14 17:39:06,127 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 17:39:10,939 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 17:41:29,237 INFO] Step 6950/200000; acc:  53.51; ppl:  9.37; xent: 2.24; lr: 0.00000687;   0/6414 tok/s;  56659 sec
+[2021-11-14 17:47:57,007 INFO] Step 7000/200000; acc:  53.97; ppl:  9.03; xent: 2.20; lr: 0.00000692;   0/5547 tok/s;  57047 sec
+[2021-11-14 17:54:30,077 INFO] Step 7050/200000; acc:  52.69; ppl:  9.94; xent: 2.30; lr: 0.00000697;   0/5674 tok/s;  57440 sec
+[2021-11-14 17:58:23,483 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 17:58:28,156 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 18:02:11,804 INFO] Step 7100/200000; acc:  52.26; ppl: 10.18; xent: 2.32; lr: 0.00000702;   0/5746 tok/s;  57902 sec
+[2021-11-14 18:08:53,332 INFO] Step 7150/200000; acc:  52.88; ppl:  9.99; xent: 2.30; lr: 0.00000707;   0/5771 tok/s;  58303 sec
+[2021-11-14 18:15:33,506 INFO] Step 7200/200000; acc:  53.36; ppl:  9.48; xent: 2.25; lr: 0.00000712;   0/5114 tok/s;  58703 sec
+[2021-11-14 18:17:57,100 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 18:17:58,097 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 18:23:12,355 INFO] Step 7250/200000; acc:  53.18; ppl:  9.55; xent: 2.26; lr: 0.00000716;   0/6113 tok/s;  59162 sec
+[2021-11-14 18:29:47,266 INFO] Step 7300/200000; acc:  54.67; ppl:  8.85; xent: 2.18; lr: 0.00000721;   0/5534 tok/s;  59557 sec
+[2021-11-14 18:36:45,726 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 18:36:50,491 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 18:37:08,541 INFO] Step 7350/200000; acc:  55.27; ppl:  8.43; xent: 2.13; lr: 0.00000726;   0/6014 tok/s;  59998 sec
+[2021-11-14 18:43:54,685 INFO] Step 7400/200000; acc:  54.65; ppl:  8.78; xent: 2.17; lr: 0.00000731;   0/5485 tok/s;  60405 sec
+[2021-11-14 18:50:28,891 INFO] Step 7450/200000; acc:  54.95; ppl:  8.57; xent: 2.15; lr: 0.00000736;   0/5790 tok/s;  60799 sec
+[2021-11-14 18:56:04,795 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 18:56:09,479 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 18:57:53,263 INFO] Step 7500/200000; acc:  54.25; ppl:  8.95; xent: 2.19; lr: 0.00000741;   0/4280 tok/s;  61243 sec
+[2021-11-14 19:04:34,795 INFO] Step 7550/200000; acc:  53.66; ppl:  9.25; xent: 2.22; lr: 0.00000746;   0/3971 tok/s;  61645 sec
+[2021-11-14 19:11:11,234 INFO] Step 7600/200000; acc:  55.98; ppl:  8.25; xent: 2.11; lr: 0.00000751;   0/3794 tok/s;  62041 sec
+[2021-11-14 19:15:37,127 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 19:15:41,764 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 19:18:51,482 INFO] Step 7650/200000; acc:  55.07; ppl:  8.60; xent: 2.15; lr: 0.00000756;   0/4700 tok/s;  62501 sec
+[2021-11-14 19:25:39,674 INFO] Step 7700/200000; acc:  53.39; ppl:  9.50; xent: 2.25; lr: 0.00000761;   0/3449 tok/s;  62910 sec
+[2021-11-14 19:32:15,122 INFO] Step 7750/200000; acc:  54.71; ppl:  8.78; xent: 2.17; lr: 0.00000766;   0/3269 tok/s;  63305 sec
+[2021-11-14 19:34:50,420 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 19:34:51,479 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 19:39:32,575 INFO] Step 7800/200000; acc:  55.04; ppl:  8.62; xent: 2.15; lr: 0.00000771;   0/6415 tok/s;  63742 sec
+[2021-11-14 19:46:11,932 INFO] Step 7850/200000; acc:  55.47; ppl:  8.23; xent: 2.11; lr: 0.00000776;   0/3561 tok/s;  64142 sec
+[2021-11-14 19:52:37,800 INFO] Step 7900/200000; acc:  55.90; ppl:  8.12; xent: 2.09; lr: 0.00000781;   0/5347 tok/s;  64528 sec
+[2021-11-14 19:54:19,371 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 19:54:24,008 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 20:00:24,228 INFO] Step 7950/200000; acc:  55.57; ppl:  8.19; xent: 2.10; lr: 0.00000786;   0/5451 tok/s;  64994 sec
+[2021-11-14 20:07:16,052 INFO] Step 8000/200000; acc:  55.70; ppl:  8.10; xent: 2.09; lr: 0.00000791;   0/3856 tok/s;  65406 sec
+[2021-11-14 20:07:16,057 INFO] Saving checkpoint /scratch/new_msmo/model_step_8000.pt
+[2021-11-14 20:14:00,281 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 20:14:04,994 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 20:15:02,885 INFO] Step 8050/200000; acc:  55.65; ppl:  8.17; xent: 2.10; lr: 0.00000796;   0/5656 tok/s;  65873 sec
+[2021-11-14 20:21:33,879 INFO] Step 8100/200000; acc:  56.06; ppl:  8.00; xent: 2.08; lr: 0.00000800;   0/5996 tok/s;  66264 sec
+[2021-11-14 20:28:08,757 INFO] Step 8150/200000; acc:  55.75; ppl:  8.01; xent: 2.08; lr: 0.00000805;   0/6373 tok/s;  66659 sec
+[2021-11-14 20:32:52,160 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 20:32:56,911 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 20:35:35,036 INFO] Step 8200/200000; acc:  55.95; ppl:  8.06; xent: 2.09; lr: 0.00000810;   0/6086 tok/s;  67105 sec
+[2021-11-14 20:42:17,640 INFO] Step 8250/200000; acc:  56.65; ppl:  7.66; xent: 2.04; lr: 0.00000815;   0/5904 tok/s;  67507 sec
+[2021-11-14 20:49:07,607 INFO] Step 8300/200000; acc:  56.88; ppl:  7.63; xent: 2.03; lr: 0.00000820;   0/6211 tok/s;  67917 sec
+[2021-11-14 20:52:47,848 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 20:52:48,846 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 20:56:55,507 INFO] Step 8350/200000; acc:  55.39; ppl:  8.09; xent: 2.09; lr: 0.00000825;   0/4601 tok/s;  68385 sec
+[2021-11-14 21:03:38,920 INFO] Step 8400/200000; acc:  56.82; ppl:  7.35; xent: 1.99; lr: 0.00000830;   0/6030 tok/s;  68789 sec
+[2021-11-14 21:10:18,686 INFO] Step 8450/200000; acc:  56.47; ppl:  7.78; xent: 2.05; lr: 0.00000835;   0/6043 tok/s;  69189 sec
+[2021-11-14 21:12:30,289 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 21:12:34,901 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 21:18:08,041 INFO] Step 8500/200000; acc:  56.10; ppl:  7.90; xent: 2.07; lr: 0.00000840;   0/5685 tok/s;  69658 sec
+[2021-11-14 21:25:05,782 INFO] Step 8550/200000; acc:  55.75; ppl:  8.02; xent: 2.08; lr: 0.00000845;   0/4660 tok/s;  70076 sec
+[2021-11-14 21:32:15,787 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 21:32:20,305 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 21:32:52,899 INFO] Step 8600/200000; acc:  55.77; ppl:  7.82; xent: 2.06; lr: 0.00000850;   0/5130 tok/s;  70543 sec
+[2021-11-14 21:39:29,359 INFO] Step 8650/200000; acc:  55.18; ppl:  8.27; xent: 2.11; lr: 0.00000855;   0/5064 tok/s;  70939 sec
+[2021-11-14 21:46:06,140 INFO] Step 8700/200000; acc:  56.51; ppl:  7.78; xent: 2.05; lr: 0.00000860;   0/5934 tok/s;  71336 sec
+[2021-11-14 21:51:53,236 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 21:51:57,810 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 21:53:58,424 INFO] Step 8750/200000; acc:  57.42; ppl:  7.32; xent: 1.99; lr: 0.00000865;   0/6076 tok/s;  71808 sec
+[2021-11-14 22:00:48,896 INFO] Step 8800/200000; acc:  56.85; ppl:  7.48; xent: 2.01; lr: 0.00000870;   0/4972 tok/s;  72219 sec
+[2021-11-14 22:07:30,699 INFO] Step 8850/200000; acc:  56.57; ppl:  7.79; xent: 2.05; lr: 0.00000875;   0/5224 tok/s;  72621 sec
+[2021-11-14 22:11:40,659 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-14 22:11:41,649 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 22:15:21,547 INFO] Step 8900/200000; acc:  57.29; ppl:  7.26; xent: 1.98; lr: 0.00000880;   0/5719 tok/s;  73091 sec
+[2021-11-14 22:21:55,512 INFO] Step 8950/200000; acc:  57.72; ppl:  7.03; xent: 1.95; lr: 0.00000884;   0/5361 tok/s;  73485 sec
+[2021-11-14 22:28:42,815 INFO] Step 9000/200000; acc:  56.66; ppl:  7.54; xent: 2.02; lr: 0.00000889;   0/5842 tok/s;  73893 sec
+[2021-11-14 22:31:26,517 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 22:31:31,157 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 22:36:33,557 INFO] Step 9050/200000; acc:  56.58; ppl:  7.37; xent: 2.00; lr: 0.00000894;   0/3363 tok/s;  74363 sec
+[2021-11-14 22:43:40,408 INFO] Step 9100/200000; acc:  56.83; ppl:  7.41; xent: 2.00; lr: 0.00000899;   0/5124 tok/s;  74790 sec
+[2021-11-14 22:50:46,086 INFO] Step 9150/200000; acc:  56.74; ppl:  7.31; xent: 1.99; lr: 0.00000904;   0/5809 tok/s;  75216 sec
+[2021-11-14 22:50:58,348 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 22:51:03,193 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 22:57:50,407 INFO] Step 9200/200000; acc:  56.89; ppl:  7.39; xent: 2.00; lr: 0.00000909;   0/3221 tok/s;  75640 sec
+[2021-11-14 23:04:43,752 INFO] Step 9250/200000; acc:  57.98; ppl:  7.01; xent: 1.95; lr: 0.00000914;   0/4024 tok/s;  76054 sec
+[2021-11-14 23:10:55,686 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-14 23:11:00,349 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 23:12:26,203 INFO] Step 9300/200000; acc:  56.58; ppl:  7.56; xent: 2.02; lr: 0.00000919;   0/3534 tok/s;  76516 sec
+[2021-11-14 23:19:08,215 INFO] Step 9350/200000; acc:  57.21; ppl:  7.16; xent: 1.97; lr: 0.00000924;   0/3844 tok/s;  76918 sec
+[2021-11-14 23:25:59,514 INFO] Step 9400/200000; acc:  56.90; ppl:  7.43; xent: 2.01; lr: 0.00000929;   0/4240 tok/s;  77329 sec
+[2021-11-14 23:30:51,463 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-14 23:30:52,429 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 23:33:37,914 INFO] Step 9450/200000; acc:  57.61; ppl:  7.10; xent: 1.96; lr: 0.00000934;   0/2890 tok/s;  77788 sec
+[2021-11-14 23:40:29,732 INFO] Step 9500/200000; acc:  58.29; ppl:  6.71; xent: 1.90; lr: 0.00000939;   0/3074 tok/s;  78200 sec
+[2021-11-14 23:47:15,305 INFO] Step 9550/200000; acc:  57.50; ppl:  7.06; xent: 1.95; lr: 0.00000944;   0/5359 tok/s;  78605 sec
+[2021-11-14 23:50:47,195 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-14 23:50:51,723 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-14 23:55:10,994 INFO] Step 9600/200000; acc:  56.09; ppl:  7.46; xent: 2.01; lr: 0.00000949;   0/5512 tok/s;  79081 sec
+[2021-11-15 00:01:56,187 INFO] Step 9650/200000; acc:  56.95; ppl:  7.44; xent: 2.01; lr: 0.00000954;   0/5687 tok/s;  79486 sec
+[2021-11-15 00:08:41,074 INFO] Step 9700/200000; acc:  58.45; ppl:  6.75; xent: 1.91; lr: 0.00000959;   0/4767 tok/s;  79891 sec
+[2021-11-15 00:10:29,625 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 00:10:34,250 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 00:16:27,962 INFO] Step 9750/200000; acc:  57.05; ppl:  7.35; xent: 1.99; lr: 0.00000964;   0/6088 tok/s;  80358 sec
+[2021-11-15 00:23:12,549 INFO] Step 9800/200000; acc:  57.42; ppl:  7.07; xent: 1.96; lr: 0.00000968;   0/5911 tok/s;  80762 sec
+[2021-11-15 00:30:08,708 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 00:30:13,263 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 00:31:00,808 INFO] Step 9850/200000; acc:  57.17; ppl:  7.16; xent: 1.97; lr: 0.00000973;   0/6272 tok/s;  81231 sec
+[2021-11-15 00:37:51,020 INFO] Step 9900/200000; acc:  56.75; ppl:  7.35; xent: 1.99; lr: 0.00000978;   0/6733 tok/s;  81641 sec
+[2021-11-15 00:44:43,875 INFO] Step 9950/200000; acc:  58.16; ppl:  6.86; xent: 1.93; lr: 0.00000983;   0/4894 tok/s;  82054 sec
+[2021-11-15 00:49:51,199 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 00:49:52,273 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 00:52:15,857 INFO] Step 10000/200000; acc:  60.03; ppl:  6.13; xent: 1.81; lr: 0.00000988;   0/6417 tok/s;  82506 sec
+[2021-11-15 00:52:15,861 INFO] Saving checkpoint /scratch/new_msmo/model_step_10000.pt
+[2021-11-15 00:58:58,626 INFO] Step 10050/200000; acc:  59.27; ppl:  6.45; xent: 1.86; lr: 0.00000993;   0/5415 tok/s;  82908 sec
+[2021-11-15 01:05:38,449 INFO] Step 10100/200000; acc:  57.41; ppl:  7.13; xent: 1.96; lr: 0.00000998;   0/7151 tok/s;  83308 sec
+[2021-11-15 01:09:42,107 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 01:09:46,768 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 01:13:37,528 INFO] Step 10150/200000; acc:  58.51; ppl:  6.59; xent: 1.89; lr: 0.00001003;   0/5811 tok/s;  83787 sec
+[2021-11-15 01:20:18,244 INFO] Step 10200/200000; acc:  58.00; ppl:  6.91; xent: 1.93; lr: 0.00001008;   0/5647 tok/s;  84188 sec
+[2021-11-15 01:26:58,341 INFO] Step 10250/200000; acc:  57.54; ppl:  6.93; xent: 1.94; lr: 0.00001013;   0/5099 tok/s;  84588 sec
+[2021-11-15 01:28:55,102 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 01:28:59,828 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 01:34:12,020 INFO] Step 10300/200000; acc:  59.57; ppl:  6.34; xent: 1.85; lr: 0.00001018;   0/6222 tok/s;  85022 sec
+[2021-11-15 01:40:58,463 INFO] Step 10350/200000; acc:  58.33; ppl:  6.82; xent: 1.92; lr: 0.00001023;   0/6413 tok/s;  85428 sec
+[2021-11-15 01:48:23,279 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 01:48:27,866 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 01:48:45,989 INFO] Step 10400/200000; acc:  59.05; ppl:  6.63; xent: 1.89; lr: 0.00001028;   0/6496 tok/s;  85896 sec
+[2021-11-15 01:55:35,733 INFO] Step 10450/200000; acc:  59.50; ppl:  6.38; xent: 1.85; lr: 0.00001033;   0/5312 tok/s;  86306 sec
+[2021-11-15 02:02:27,415 INFO] Step 10500/200000; acc:  58.75; ppl:  6.44; xent: 1.86; lr: 0.00001038;   0/5868 tok/s;  86717 sec
+[2021-11-15 02:08:25,705 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 02:08:26,696 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 02:10:10,369 INFO] Step 10550/200000; acc:  57.97; ppl:  6.82; xent: 1.92; lr: 0.00001043;   0/3497 tok/s;  87180 sec
+[2021-11-15 02:16:48,043 INFO] Step 10600/200000; acc:  58.94; ppl:  6.50; xent: 1.87; lr: 0.00001048;   0/3758 tok/s;  87578 sec
+[2021-11-15 02:23:26,831 INFO] Step 10650/200000; acc:  58.65; ppl:  6.67; xent: 1.90; lr: 0.00001052;   0/6021 tok/s;  87977 sec
+[2021-11-15 02:28:00,915 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 02:28:05,601 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 02:31:27,767 INFO] Step 10700/200000; acc:  58.85; ppl:  6.57; xent: 1.88; lr: 0.00001057;   0/3714 tok/s;  88458 sec
+[2021-11-15 02:38:13,045 INFO] Step 10750/200000; acc:  58.48; ppl:  6.62; xent: 1.89; lr: 0.00001062;   0/3663 tok/s;  88863 sec
+[2021-11-15 02:45:04,903 INFO] Step 10800/200000; acc:  57.72; ppl:  6.88; xent: 1.93; lr: 0.00001067;   0/3155 tok/s;  89275 sec
+[2021-11-15 02:47:55,727 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 02:48:00,281 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 02:52:37,014 INFO] Step 10850/200000; acc:  59.16; ppl:  6.50; xent: 1.87; lr: 0.00001072;   0/4317 tok/s;  89727 sec
+[2021-11-15 02:59:18,858 INFO] Step 10900/200000; acc:  58.19; ppl:  6.85; xent: 1.92; lr: 0.00001077;   0/3328 tok/s;  90129 sec
+[2021-11-15 03:06:11,925 INFO] Step 10950/200000; acc:  58.03; ppl:  6.79; xent: 1.92; lr: 0.00001082;   0/1314 tok/s;  90542 sec
+[2021-11-15 03:07:26,472 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 03:07:31,149 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 03:13:43,467 INFO] Step 11000/200000; acc:  59.05; ppl:  6.48; xent: 1.87; lr: 0.00001087;   0/5447 tok/s;  90993 sec
+[2021-11-15 03:20:38,366 INFO] Step 11050/200000; acc:  59.01; ppl:  6.48; xent: 1.87; lr: 0.00001092;   0/5590 tok/s;  91408 sec
+[2021-11-15 03:27:14,065 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 03:27:15,044 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 03:28:20,685 INFO] Step 11100/200000; acc:  60.27; ppl:  5.86; xent: 1.77; lr: 0.00001097;   0/5366 tok/s;  91871 sec
+[2021-11-15 03:34:58,310 INFO] Step 11150/200000; acc:  59.90; ppl:  6.04; xent: 1.80; lr: 0.00001102;   0/3561 tok/s;  92268 sec
+[2021-11-15 03:41:36,943 INFO] Step 11200/200000; acc:  58.64; ppl:  6.38; xent: 1.85; lr: 0.00001107;   0/3908 tok/s;  92667 sec
+[2021-11-15 03:46:56,702 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 03:47:01,265 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 03:49:41,329 INFO] Step 11250/200000; acc:  58.80; ppl:  6.36; xent: 1.85; lr: 0.00001112;   0/5478 tok/s;  93151 sec
+[2021-11-15 03:56:31,798 INFO] Step 11300/200000; acc:  57.87; ppl:  6.74; xent: 1.91; lr: 0.00001117;   0/6361 tok/s;  93562 sec
+[2021-11-15 04:03:20,569 INFO] Step 11350/200000; acc:  60.06; ppl:  6.07; xent: 1.80; lr: 0.00001122;   0/5056 tok/s;  93970 sec
+[2021-11-15 04:07:04,484 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 04:07:09,202 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 04:11:09,949 INFO] Step 11400/200000; acc:  58.70; ppl:  6.36; xent: 1.85; lr: 0.00001127;   0/5449 tok/s;  94440 sec
+[2021-11-15 04:17:47,423 INFO] Step 11450/200000; acc:  58.91; ppl:  6.55; xent: 1.88; lr: 0.00001132;   0/5370 tok/s;  94837 sec
+[2021-11-15 04:24:32,804 INFO] Step 11500/200000; acc:  59.01; ppl:  6.41; xent: 1.86; lr: 0.00001136;   0/4879 tok/s;  95243 sec
+[2021-11-15 04:26:37,233 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 04:26:41,885 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 04:32:24,540 INFO] Step 11550/200000; acc:  59.45; ppl:  6.21; xent: 1.83; lr: 0.00001141;   0/5146 tok/s;  95714 sec
+[2021-11-15 04:39:18,914 INFO] Step 11600/200000; acc:  57.59; ppl:  6.94; xent: 1.94; lr: 0.00001146;   0/5868 tok/s;  96129 sec
+[2021-11-15 04:46:42,397 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 04:46:43,389 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 04:47:15,852 INFO] Step 11650/200000; acc:  59.45; ppl:  6.13; xent: 1.81; lr: 0.00001151;   0/5951 tok/s;  96606 sec
+[2021-11-15 04:54:01,250 INFO] Step 11700/200000; acc:  58.17; ppl:  6.57; xent: 1.88; lr: 0.00001156;   0/4773 tok/s;  97011 sec
+[2021-11-15 05:00:41,174 INFO] Step 11750/200000; acc:  58.66; ppl:  6.46; xent: 1.87; lr: 0.00001161;   0/5672 tok/s;  97411 sec
+[2021-11-15 05:06:34,468 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 05:06:38,994 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 05:08:43,036 INFO] Step 11800/200000; acc:  60.43; ppl:  5.96; xent: 1.78; lr: 0.00001166;   0/5291 tok/s;  97893 sec
+[2021-11-15 05:15:26,670 INFO] Step 11850/200000; acc:  59.85; ppl:  6.06; xent: 1.80; lr: 0.00001171;   0/5514 tok/s;  98297 sec
+[2021-11-15 05:22:14,719 INFO] Step 11900/200000; acc:  58.71; ppl:  6.42; xent: 1.86; lr: 0.00001176;   0/5305 tok/s;  98705 sec
+[2021-11-15 05:26:23,372 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 05:26:27,964 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 05:30:00,311 INFO] Step 11950/200000; acc:  58.71; ppl:  6.47; xent: 1.87; lr: 0.00001181;   0/5391 tok/s;  99170 sec
+[2021-11-15 05:36:41,391 INFO] Step 12000/200000; acc:  59.40; ppl:  6.12; xent: 1.81; lr: 0.00001186;   0/5388 tok/s;  99571 sec
+[2021-11-15 05:36:41,395 INFO] Saving checkpoint /scratch/new_msmo/model_step_12000.pt
+[2021-11-15 05:43:22,013 INFO] Step 12050/200000; acc:  59.73; ppl:  6.04; xent: 1.80; lr: 0.00001191;   0/5612 tok/s;  99972 sec
+[2021-11-15 05:45:59,957 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 05:46:04,504 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 05:51:14,624 INFO] Step 12100/200000; acc:  58.08; ppl:  6.59; xent: 1.88; lr: 0.00001196;   0/3683 tok/s; 100444 sec
+[2021-11-15 05:58:08,452 INFO] Step 12150/200000; acc:  59.51; ppl:  6.33; xent: 1.85; lr: 0.00001201;   0/3432 tok/s; 100858 sec
+[2021-11-15 06:05:40,035 INFO] Step 12200/200000; acc:  60.35; ppl:  5.86; xent: 1.77; lr: 0.00001206;   0/1417 tok/s; 101310 sec
+[2021-11-15 06:05:55,343 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 06:05:56,335 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 06:12:41,411 INFO] Step 12250/200000; acc:  59.16; ppl:  6.21; xent: 1.83; lr: 0.00001211;   0/4119 tok/s; 101731 sec
+[2021-11-15 06:19:21,675 INFO] Step 12300/200000; acc:  60.25; ppl:  5.86; xent: 1.77; lr: 0.00001216;   0/3951 tok/s; 102132 sec
+[2021-11-15 06:25:49,290 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 06:25:54,014 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 06:27:18,063 INFO] Step 12350/200000; acc:  59.88; ppl:  6.00; xent: 1.79; lr: 0.00001220;   0/3912 tok/s; 102608 sec
+[2021-11-15 06:34:06,905 INFO] Step 12400/200000; acc:  59.37; ppl:  6.07; xent: 1.80; lr: 0.00001225;   0/5405 tok/s; 103017 sec
+[2021-11-15 06:40:54,076 INFO] Step 12450/200000; acc:  59.73; ppl:  6.11; xent: 1.81; lr: 0.00001230;   0/6743 tok/s; 103424 sec
+[2021-11-15 06:45:45,922 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 06:45:50,490 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 06:48:39,163 INFO] Step 12500/200000; acc:  60.17; ppl:  5.96; xent: 1.78; lr: 0.00001235;   0/5853 tok/s; 103889 sec
+[2021-11-15 06:55:20,116 INFO] Step 12550/200000; acc:  59.21; ppl:  6.36; xent: 1.85; lr: 0.00001240;   0/5488 tok/s; 104290 sec
+[2021-11-15 07:02:03,876 INFO] Step 12600/200000; acc:  58.78; ppl:  6.40; xent: 1.86; lr: 0.00001245;   0/4030 tok/s; 104694 sec
+[2021-11-15 07:05:18,414 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 07:05:22,967 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 07:09:55,654 INFO] Step 12650/200000; acc:  59.26; ppl:  6.27; xent: 1.84; lr: 0.00001250;   0/3444 tok/s; 105166 sec
+[2021-11-15 07:16:51,819 INFO] Step 12700/200000; acc:  58.49; ppl:  6.57; xent: 1.88; lr: 0.00001255;   0/3163 tok/s; 105582 sec
+[2021-11-15 07:23:36,430 INFO] Step 12750/200000; acc:  58.47; ppl:  6.43; xent: 1.86; lr: 0.00001260;   0/5710 tok/s; 105986 sec
+[2021-11-15 07:25:28,035 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 07:25:29,024 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 07:31:24,308 INFO] Step 12800/200000; acc:  61.21; ppl:  5.57; xent: 1.72; lr: 0.00001265;   0/5847 tok/s; 106454 sec
+[2021-11-15 07:38:09,526 INFO] Step 12850/200000; acc:  60.51; ppl:  5.83; xent: 1.76; lr: 0.00001270;   0/5077 tok/s; 106859 sec
+[2021-11-15 07:45:16,504 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 07:45:21,020 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 07:46:07,320 INFO] Step 12900/200000; acc:  58.61; ppl:  6.46; xent: 1.87; lr: 0.00001275;   0/5469 tok/s; 107337 sec
+[2021-11-15 07:52:58,876 INFO] Step 12950/200000; acc:  59.31; ppl:  6.22; xent: 1.83; lr: 0.00001280;   0/5736 tok/s; 107749 sec
+[2021-11-15 07:59:56,378 INFO] Step 13000/200000; acc:  60.27; ppl:  5.90; xent: 1.78; lr: 0.00001285;   0/6044 tok/s; 108166 sec
+[2021-11-15 08:05:21,637 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 08:05:26,181 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 08:07:47,207 INFO] Step 13050/200000; acc:  59.39; ppl:  6.22; xent: 1.83; lr: 0.00001290;   0/5365 tok/s; 108637 sec
+[2021-11-15 08:14:25,481 INFO] Step 13100/200000; acc:  58.49; ppl:  6.51; xent: 1.87; lr: 0.00001295;   0/5422 tok/s; 109035 sec
+[2021-11-15 08:21:07,031 INFO] Step 13150/200000; acc:  59.00; ppl:  6.19; xent: 1.82; lr: 0.00001299;   0/5238 tok/s; 109437 sec
+[2021-11-15 08:25:01,022 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 08:25:05,704 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 08:28:57,251 INFO] Step 13200/200000; acc:  59.74; ppl:  6.09; xent: 1.81; lr: 0.00001304;   0/6763 tok/s; 109907 sec
+[2021-11-15 08:35:49,629 INFO] Step 13250/200000; acc:  59.85; ppl:  5.98; xent: 1.79; lr: 0.00001309;   0/5706 tok/s; 110319 sec
+[2021-11-15 08:42:36,700 INFO] Step 13300/200000; acc:  59.81; ppl:  5.96; xent: 1.78; lr: 0.00001314;   0/6052 tok/s; 110727 sec
+[2021-11-15 08:44:56,020 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 08:44:57,018 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 08:50:22,731 INFO] Step 13350/200000; acc:  61.22; ppl:  5.55; xent: 1.71; lr: 0.00001319;   0/6217 tok/s; 111193 sec
+[2021-11-15 08:56:58,382 INFO] Step 13400/200000; acc:  59.82; ppl:  5.90; xent: 1.77; lr: 0.00001324;   0/5351 tok/s; 111588 sec
+[2021-11-15 09:04:33,456 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 09:04:38,046 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 09:04:56,737 INFO] Step 13450/200000; acc:  59.22; ppl:  6.07; xent: 1.80; lr: 0.00001329;   0/5805 tok/s; 112067 sec
+[2021-11-15 09:11:49,017 INFO] Step 13500/200000; acc:  59.63; ppl:  6.02; xent: 1.79; lr: 0.00001334;   0/5490 tok/s; 112479 sec
+[2021-11-15 09:18:43,229 INFO] Step 13550/200000; acc:  59.89; ppl:  5.98; xent: 1.79; lr: 0.00001339;   0/5164 tok/s; 112893 sec
+[2021-11-15 09:24:44,876 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 09:24:49,571 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 09:26:32,857 INFO] Step 13600/200000; acc:  61.54; ppl:  5.48; xent: 1.70; lr: 0.00001344;   0/3668 tok/s; 113363 sec
+[2021-11-15 09:33:10,904 INFO] Step 13650/200000; acc:  60.03; ppl:  5.98; xent: 1.79; lr: 0.00001349;   0/4399 tok/s; 113761 sec
+[2021-11-15 09:39:54,363 INFO] Step 13700/200000; acc:  59.93; ppl:  5.82; xent: 1.76; lr: 0.00001354;   0/5178 tok/s; 114164 sec
+[2021-11-15 09:44:15,885 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 09:44:20,560 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 09:47:43,275 INFO] Step 13750/200000; acc:  60.23; ppl:  5.87; xent: 1.77; lr: 0.00001359;   0/3369 tok/s; 114633 sec
+[2021-11-15 09:54:32,554 INFO] Step 13800/200000; acc:  59.65; ppl:  6.00; xent: 1.79; lr: 0.00001364;   0/3939 tok/s; 115042 sec
+[2021-11-15 10:01:23,945 INFO] Step 13850/200000; acc:  59.99; ppl:  5.95; xent: 1.78; lr: 0.00001369;   0/5317 tok/s; 115454 sec
+[2021-11-15 10:04:23,080 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 10:04:24,067 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 10:09:14,329 INFO] Step 13900/200000; acc:  60.61; ppl:  5.69; xent: 1.74; lr: 0.00001374;   0/5178 tok/s; 115924 sec
+[2021-11-15 10:15:51,906 INFO] Step 13950/200000; acc:  59.99; ppl:  5.92; xent: 1.78; lr: 0.00001379;   0/6252 tok/s; 116322 sec
+[2021-11-15 10:22:51,364 INFO] Step 14000/200000; acc:  61.34; ppl:  5.42; xent: 1.69; lr: 0.00001383;   0/4991 tok/s; 116741 sec
+[2021-11-15 10:22:51,368 INFO] Saving checkpoint /scratch/new_msmo/model_step_14000.pt
+[2021-11-15 10:24:11,016 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 10:24:15,734 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 10:30:42,240 INFO] Step 14050/200000; acc:  60.84; ppl:  5.69; xent: 1.74; lr: 0.00001388;   0/2799 tok/s; 117212 sec
+[2021-11-15 10:37:41,439 INFO] Step 14100/200000; acc:  59.51; ppl:  6.02; xent: 1.79; lr: 0.00001393;   0/3912 tok/s; 117631 sec
+[2021-11-15 10:44:20,151 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 10:44:24,734 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 10:45:33,073 INFO] Step 14150/200000; acc:  59.84; ppl:  5.99; xent: 1.79; lr: 0.00001398;   0/3348 tok/s; 118103 sec
+[2021-11-15 10:52:08,536 INFO] Step 14200/200000; acc:  60.09; ppl:  5.86; xent: 1.77; lr: 0.00001403;   0/5838 tok/s; 118498 sec
+[2021-11-15 10:58:52,459 INFO] Step 14250/200000; acc:  60.47; ppl:  5.74; xent: 1.75; lr: 0.00001408;   0/5727 tok/s; 118902 sec
+[2021-11-15 11:03:55,845 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 11:04:00,388 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 11:06:40,087 INFO] Step 14300/200000; acc:  61.26; ppl:  5.66; xent: 1.73; lr: 0.00001413;   0/5364 tok/s; 119370 sec
+[2021-11-15 11:13:30,224 INFO] Step 14350/200000; acc:  60.00; ppl:  5.91; xent: 1.78; lr: 0.00001418;   0/3908 tok/s; 119780 sec
+[2021-11-15 11:20:18,581 INFO] Step 14400/200000; acc:  60.93; ppl:  5.62; xent: 1.73; lr: 0.00001423;   0/3741 tok/s; 120188 sec
+[2021-11-15 11:23:50,269 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 11:23:51,257 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 11:28:05,357 INFO] Step 14450/200000; acc:  60.14; ppl:  5.81; xent: 1.76; lr: 0.00001428;   0/5281 tok/s; 120655 sec
+[2021-11-15 11:34:53,807 INFO] Step 14500/200000; acc:  61.46; ppl:  5.42; xent: 1.69; lr: 0.00001433;   0/4495 tok/s; 121064 sec
+[2021-11-15 11:41:40,212 INFO] Step 14550/200000; acc:  60.38; ppl:  5.77; xent: 1.75; lr: 0.00001438;   0/6120 tok/s; 121470 sec
+[2021-11-15 11:43:49,052 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 11:43:53,625 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 11:49:37,042 INFO] Step 14600/200000; acc:  60.20; ppl:  5.82; xent: 1.76; lr: 0.00001443;   0/6028 tok/s; 121947 sec
+[2021-11-15 11:56:32,155 INFO] Step 14650/200000; acc:  60.30; ppl:  5.69; xent: 1.74; lr: 0.00001448;   0/6151 tok/s; 122362 sec
+[2021-11-15 12:03:47,765 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 12:03:52,320 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 12:04:26,632 INFO] Step 14700/200000; acc:  60.53; ppl:  5.64; xent: 1.73; lr: 0.00001453;   0/5221 tok/s; 122836 sec
+[2021-11-15 12:11:18,214 INFO] Step 14750/200000; acc:  60.85; ppl:  5.62; xent: 1.73; lr: 0.00001458;   0/6124 tok/s; 123248 sec
+[2021-11-15 12:17:59,186 INFO] Step 14800/200000; acc:  59.95; ppl:  5.81; xent: 1.76; lr: 0.00001463;   0/6067 tok/s; 123649 sec
+[2021-11-15 12:23:40,126 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 12:23:44,824 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 12:25:50,600 INFO] Step 14850/200000; acc:  59.88; ppl:  5.95; xent: 1.78; lr: 0.00001467;   0/5705 tok/s; 124120 sec
+[2021-11-15 12:32:37,585 INFO] Step 14900/200000; acc:  60.39; ppl:  5.90; xent: 1.78; lr: 0.00001472;   0/6197 tok/s; 124527 sec
+[2021-11-15 12:39:30,376 INFO] Step 14950/200000; acc:  60.12; ppl:  5.83; xent: 1.76; lr: 0.00001477;   0/5583 tok/s; 124940 sec
+[2021-11-15 12:43:36,969 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 12:43:37,959 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 12:47:19,453 INFO] Step 15000/200000; acc:  60.23; ppl:  5.78; xent: 1.75; lr: 0.00001482;   0/5866 tok/s; 125409 sec
+[2021-11-15 12:53:56,608 INFO] Step 15050/200000; acc:  60.88; ppl:  5.59; xent: 1.72; lr: 0.00001487;   0/5759 tok/s; 125806 sec
+[2021-11-15 13:00:43,225 INFO] Step 15100/200000; acc:  60.12; ppl:  5.85; xent: 1.77; lr: 0.00001492;   0/5069 tok/s; 126213 sec
+[2021-11-15 13:03:26,387 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 13:03:30,931 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 13:08:39,344 INFO] Step 15150/200000; acc:  60.90; ppl:  5.59; xent: 1.72; lr: 0.00001497;   0/3710 tok/s; 126689 sec
+[2021-11-15 13:15:36,610 INFO] Step 15200/200000; acc:  60.88; ppl:  5.65; xent: 1.73; lr: 0.00001502;   0/3202 tok/s; 127106 sec
+[2021-11-15 13:23:12,396 INFO] Step 15250/200000; acc:  61.71; ppl:  5.39; xent: 1.68; lr: 0.00001507;   0/1378 tok/s; 127562 sec
+[2021-11-15 13:23:29,939 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 13:23:34,520 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 13:30:11,677 INFO] Step 15300/200000; acc:  60.64; ppl:  5.64; xent: 1.73; lr: 0.00001512;   0/3614 tok/s; 127982 sec
+[2021-11-15 13:36:54,393 INFO] Step 15350/200000; acc:  61.19; ppl:  5.47; xent: 1.70; lr: 0.00001517;   0/3784 tok/s; 128384 sec
+[2021-11-15 13:43:09,730 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 13:43:14,422 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 13:44:41,676 INFO] Step 15400/200000; acc:  59.63; ppl:  5.88; xent: 1.77; lr: 0.00001522;   0/3222 tok/s; 128852 sec
+[2021-11-15 13:51:28,146 INFO] Step 15450/200000; acc:  60.87; ppl:  5.66; xent: 1.73; lr: 0.00001527;   0/6195 tok/s; 129258 sec
+[2021-11-15 13:58:21,052 INFO] Step 15500/200000; acc:  59.27; ppl:  6.13; xent: 1.81; lr: 0.00001532;   0/3698 tok/s; 129671 sec
+[2021-11-15 14:03:10,501 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 14:03:11,501 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 14:06:07,024 INFO] Step 15550/200000; acc:  59.35; ppl:  5.94; xent: 1.78; lr: 0.00001537;   0/3561 tok/s; 130137 sec
+[2021-11-15 14:12:48,481 INFO] Step 15600/200000; acc:  61.78; ppl:  5.28; xent: 1.66; lr: 0.00001542;   0/3490 tok/s; 130538 sec
+[2021-11-15 14:19:28,418 INFO] Step 15650/200000; acc:  60.17; ppl:  5.69; xent: 1.74; lr: 0.00001547;   0/3092 tok/s; 130938 sec
+[2021-11-15 14:22:47,063 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 14:22:51,594 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 14:27:22,349 INFO] Step 15700/200000; acc:  61.30; ppl:  5.49; xent: 1.70; lr: 0.00001551;   0/3693 tok/s; 131412 sec
+[2021-11-15 14:34:12,037 INFO] Step 15750/200000; acc:  59.93; ppl:  5.84; xent: 1.76; lr: 0.00001556;   0/5307 tok/s; 131822 sec
+[2021-11-15 14:40:58,400 INFO] Step 15800/200000; acc:  60.09; ppl:  5.89; xent: 1.77; lr: 0.00001561;   0/5832 tok/s; 132228 sec
+[2021-11-15 14:42:47,469 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 14:42:52,175 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 14:48:46,528 INFO] Step 15850/200000; acc:  61.46; ppl:  5.42; xent: 1.69; lr: 0.00001566;   0/3373 tok/s; 132696 sec
+[2021-11-15 14:55:33,338 INFO] Step 15900/200000; acc:  59.93; ppl:  5.94; xent: 1.78; lr: 0.00001571;   0/4109 tok/s; 133103 sec
+[2021-11-15 15:02:19,438 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 15:02:23,975 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 15:03:15,501 INFO] Step 15950/200000; acc:  61.62; ppl:  5.37; xent: 1.68; lr: 0.00001576;   0/5319 tok/s; 133565 sec
+[2021-11-15 15:10:00,121 INFO] Step 16000/200000; acc:  60.63; ppl:  5.69; xent: 1.74; lr: 0.00001581;   0/6053 tok/s; 133970 sec
+[2021-11-15 15:10:00,126 INFO] Saving checkpoint /scratch/new_msmo/model_step_16000.pt
+[2021-11-15 15:16:50,415 INFO] Step 16050/200000; acc:  62.24; ppl:  5.31; xent: 1.67; lr: 0.00001579;   0/6664 tok/s; 134380 sec
+[2021-11-15 15:22:18,511 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 15:22:19,502 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 15:24:37,472 INFO] Step 16100/200000; acc:  60.81; ppl:  5.56; xent: 1.72; lr: 0.00001576;   0/6250 tok/s; 134847 sec
+[2021-11-15 15:31:13,140 INFO] Step 16150/200000; acc:  61.54; ppl:  5.38; xent: 1.68; lr: 0.00001574;   0/5805 tok/s; 135243 sec
+[2021-11-15 15:37:52,396 INFO] Step 16200/200000; acc:  60.61; ppl:  5.71; xent: 1.74; lr: 0.00001571;   0/5121 tok/s; 135642 sec
+[2021-11-15 15:41:57,264 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 15:42:01,778 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 15:45:51,131 INFO] Step 16250/200000; acc:  61.84; ppl:  5.34; xent: 1.67; lr: 0.00001569;   0/5337 tok/s; 136121 sec
+[2021-11-15 15:52:41,750 INFO] Step 16300/200000; acc:  61.11; ppl:  5.45; xent: 1.70; lr: 0.00001567;   0/5482 tok/s; 136532 sec
+[2021-11-15 15:59:31,475 INFO] Step 16350/200000; acc:  61.82; ppl:  5.40; xent: 1.69; lr: 0.00001564;   0/5777 tok/s; 136941 sec
+[2021-11-15 16:01:59,343 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 16:02:04,056 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 16:07:13,955 INFO] Step 16400/200000; acc:  62.07; ppl:  5.27; xent: 1.66; lr: 0.00001562;   0/5440 tok/s; 137404 sec
+[2021-11-15 16:13:54,166 INFO] Step 16450/200000; acc:  61.80; ppl:  5.37; xent: 1.68; lr: 0.00001559;   0/5911 tok/s; 137804 sec
+[2021-11-15 16:21:22,602 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 16:21:27,152 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 16:21:45,389 INFO] Step 16500/200000; acc:  60.49; ppl:  5.67; xent: 1.74; lr: 0.00001557;   0/5421 tok/s; 138275 sec
+[2021-11-15 16:28:32,441 INFO] Step 16550/200000; acc:  60.63; ppl:  5.56; xent: 1.72; lr: 0.00001555;   0/5176 tok/s; 138682 sec
+[2021-11-15 16:35:23,247 INFO] Step 16600/200000; acc:  60.80; ppl:  5.61; xent: 1.73; lr: 0.00001552;   0/5512 tok/s; 139093 sec
+[2021-11-15 16:41:25,578 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 16:41:26,573 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 16:43:14,035 INFO] Step 16650/200000; acc:  60.69; ppl:  5.52; xent: 1.71; lr: 0.00001550;   0/4003 tok/s; 139564 sec
+[2021-11-15 16:49:58,969 INFO] Step 16700/200000; acc:  60.55; ppl:  5.64; xent: 1.73; lr: 0.00001548;   0/4275 tok/s; 139969 sec
+[2021-11-15 16:56:46,990 INFO] Step 16750/200000; acc:  61.24; ppl:  5.46; xent: 1.70; lr: 0.00001545;   0/5818 tok/s; 140377 sec
+[2021-11-15 17:01:18,721 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 17:01:23,276 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 17:04:45,200 INFO] Step 16800/200000; acc:  62.61; ppl:  5.03; xent: 1.62; lr: 0.00001543;   0/3987 tok/s; 140855 sec
+[2021-11-15 17:11:30,691 INFO] Step 16850/200000; acc:  61.15; ppl:  5.39; xent: 1.69; lr: 0.00001541;   0/5385 tok/s; 141261 sec
+[2021-11-15 17:18:18,514 INFO] Step 16900/200000; acc:  62.17; ppl:  5.23; xent: 1.65; lr: 0.00001538;   0/6160 tok/s; 141668 sec
+[2021-11-15 17:21:15,253 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 17:21:19,837 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 17:26:04,626 INFO] Step 16950/200000; acc:  60.27; ppl:  5.67; xent: 1.74; lr: 0.00001536;   0/5546 tok/s; 142134 sec
+[2021-11-15 17:33:03,732 INFO] Step 17000/200000; acc:  60.94; ppl:  5.52; xent: 1.71; lr: 0.00001534;   0/4965 tok/s; 142554 sec
+[2021-11-15 17:40:32,169 INFO] Step 17050/200000; acc:  60.84; ppl:  5.50; xent: 1.70; lr: 0.00001532;   0/1306 tok/s; 143002 sec
+[2021-11-15 17:41:25,842 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 17:41:30,478 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 17:47:52,302 INFO] Step 17100/200000; acc:  62.08; ppl:  5.24; xent: 1.66; lr: 0.00001529;   0/3161 tok/s; 143442 sec
+[2021-11-15 17:54:51,076 INFO] Step 17150/200000; acc:  60.79; ppl:  5.66; xent: 1.73; lr: 0.00001527;   0/3685 tok/s; 143861 sec
+[2021-11-15 18:01:52,059 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 18:01:53,048 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 18:02:54,938 INFO] Step 17200/200000; acc:  61.82; ppl:  5.16; xent: 1.64; lr: 0.00001525;   0/3815 tok/s; 144345 sec
+[2021-11-15 18:09:34,732 INFO] Step 17250/200000; acc:  61.38; ppl:  5.32; xent: 1.67; lr: 0.00001523;   0/5647 tok/s; 144745 sec
+[2021-11-15 18:16:10,521 INFO] Step 17300/200000; acc:  60.90; ppl:  5.47; xent: 1.70; lr: 0.00001521;   0/5686 tok/s; 145140 sec
+[2021-11-15 18:21:25,553 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 18:21:30,151 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 18:24:16,729 INFO] Step 17350/200000; acc:  61.59; ppl:  5.32; xent: 1.67; lr: 0.00001518;   0/3763 tok/s; 145627 sec
+[2021-11-15 18:31:28,716 INFO] Step 17400/200000; acc:  61.06; ppl:  5.50; xent: 1.70; lr: 0.00001516;   0/3405 tok/s; 146059 sec
+[2021-11-15 18:38:31,086 INFO] Step 17450/200000; acc:  61.44; ppl:  5.43; xent: 1.69; lr: 0.00001514;   0/5346 tok/s; 146481 sec
+[2021-11-15 18:42:13,383 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 18:42:18,004 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 18:46:29,253 INFO] Step 17500/200000; acc:  61.29; ppl:  5.28; xent: 1.66; lr: 0.00001512;   0/5081 tok/s; 146959 sec
+[2021-11-15 18:53:27,830 INFO] Step 17550/200000; acc:  60.61; ppl:  5.56; xent: 1.72; lr: 0.00001510;   0/5160 tok/s; 147378 sec
+[2021-11-15 19:00:18,775 INFO] Step 17600/200000; acc:  62.30; ppl:  5.08; xent: 1.62; lr: 0.00001508;   0/5954 tok/s; 147789 sec
+[2021-11-15 19:02:27,431 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 19:02:32,099 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 19:08:13,922 INFO] Step 17650/200000; acc:  61.68; ppl:  5.35; xent: 1.68; lr: 0.00001505;   0/5209 tok/s; 148264 sec
+[2021-11-15 19:15:04,958 INFO] Step 17700/200000; acc:  61.52; ppl:  5.32; xent: 1.67; lr: 0.00001503;   0/5482 tok/s; 148675 sec
+[2021-11-15 19:22:23,713 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 19:22:24,695 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 19:22:55,487 INFO] Step 17750/200000; acc:  59.30; ppl:  5.85; xent: 1.77; lr: 0.00001501;   0/5694 tok/s; 149145 sec
+[2021-11-15 19:29:29,410 INFO] Step 17800/200000; acc:  61.03; ppl:  5.45; xent: 1.70; lr: 0.00001499;   0/6040 tok/s; 149539 sec
+[2021-11-15 19:36:10,316 INFO] Step 17850/200000; acc:  62.78; ppl:  5.05; xent: 1.62; lr: 0.00001497;   0/6081 tok/s; 149940 sec
+[2021-11-15 19:41:59,078 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 19:42:03,618 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 19:44:10,925 INFO] Step 17900/200000; acc:  61.82; ppl:  5.34; xent: 1.67; lr: 0.00001495;   0/5826 tok/s; 150421 sec
+[2021-11-15 19:51:01,931 INFO] Step 17950/200000; acc:  62.27; ppl:  5.18; xent: 1.65; lr: 0.00001493;   0/4422 tok/s; 150832 sec
+[2021-11-15 19:57:56,113 INFO] Step 18000/200000; acc:  61.24; ppl:  5.35; xent: 1.68; lr: 0.00001491;   0/5762 tok/s; 151246 sec
+[2021-11-15 19:57:56,119 INFO] Saving checkpoint /scratch/new_msmo/model_step_18000.pt
+[2021-11-15 20:02:29,960 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 20:02:34,629 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 20:06:14,217 INFO] Step 18050/200000; acc:  62.05; ppl:  5.17; xent: 1.64; lr: 0.00001489;   0/4813 tok/s; 151744 sec
+[2021-11-15 20:13:04,713 INFO] Step 18100/200000; acc:  61.21; ppl:  5.35; xent: 1.68; lr: 0.00001487;   0/5401 tok/s; 152155 sec
+[2021-11-15 20:20:05,139 INFO] Step 18150/200000; acc:  61.17; ppl:  5.38; xent: 1.68; lr: 0.00001485;   0/5728 tok/s; 152575 sec
+[2021-11-15 20:22:47,596 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 20:22:52,303 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 20:28:12,674 INFO] Step 18200/200000; acc:  60.55; ppl:  5.61; xent: 1.72; lr: 0.00001482;   0/3763 tok/s; 153063 sec
+[2021-11-15 20:35:29,379 INFO] Step 18250/200000; acc:  60.83; ppl:  5.49; xent: 1.70; lr: 0.00001480;   0/3130 tok/s; 153499 sec
+[2021-11-15 20:43:16,549 INFO] Step 18300/200000; acc:  62.18; ppl:  5.14; xent: 1.64; lr: 0.00001478;   0/1362 tok/s; 153966 sec
+[2021-11-15 20:43:38,448 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 20:43:39,405 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 20:50:33,629 INFO] Step 18350/200000; acc:  61.17; ppl:  5.37; xent: 1.68; lr: 0.00001476;   0/4042 tok/s; 154403 sec
+[2021-11-15 20:57:41,123 INFO] Step 18400/200000; acc:  62.68; ppl:  4.88; xent: 1.59; lr: 0.00001474;   0/4770 tok/s; 154831 sec
+[2021-11-15 21:04:25,676 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 21:04:30,317 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 21:06:00,907 INFO] Step 18450/200000; acc:  62.23; ppl:  5.12; xent: 1.63; lr: 0.00001472;   0/5543 tok/s; 155331 sec
+[2021-11-15 21:13:09,094 INFO] Step 18500/200000; acc:  61.93; ppl:  5.26; xent: 1.66; lr: 0.00001470;   0/4763 tok/s; 155759 sec
+[2021-11-15 21:20:24,657 INFO] Step 18550/200000; acc:  61.84; ppl:  5.26; xent: 1.66; lr: 0.00001468;   0/3439 tok/s; 156195 sec
+[2021-11-15 21:25:17,070 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 21:25:21,643 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 21:28:14,066 INFO] Step 18600/200000; acc:  62.17; ppl:  5.16; xent: 1.64; lr: 0.00001466;   0/3856 tok/s; 156664 sec
+[2021-11-15 21:35:01,682 INFO] Step 18650/200000; acc:  61.70; ppl:  5.24; xent: 1.66; lr: 0.00001465;   0/3433 tok/s; 157072 sec
+[2021-11-15 21:41:43,465 INFO] Step 18700/200000; acc:  62.31; ppl:  5.23; xent: 1.65; lr: 0.00001463;   0/5927 tok/s; 157473 sec
+[2021-11-15 21:45:03,071 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 21:45:07,604 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 21:49:35,663 INFO] Step 18750/200000; acc:  60.18; ppl:  5.74; xent: 1.75; lr: 0.00001461;   0/5732 tok/s; 157946 sec
+[2021-11-15 21:56:29,308 INFO] Step 18800/200000; acc:  62.31; ppl:  5.19; xent: 1.65; lr: 0.00001459;   0/5421 tok/s; 158359 sec
+[2021-11-15 22:03:46,460 INFO] Step 18850/200000; acc:  61.84; ppl:  5.21; xent: 1.65; lr: 0.00001457;   0/1367 tok/s; 158796 sec
+[2021-11-15 22:05:16,549 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 22:05:17,541 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 22:11:18,416 INFO] Step 18900/200000; acc:  62.80; ppl:  5.02; xent: 1.61; lr: 0.00001455;   0/3582 tok/s; 159248 sec
+[2021-11-15 22:18:07,087 INFO] Step 18950/200000; acc:  62.35; ppl:  5.11; xent: 1.63; lr: 0.00001453;   0/5857 tok/s; 159657 sec
+[2021-11-15 22:25:09,348 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 22:25:14,017 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 22:25:59,002 INFO] Step 19000/200000; acc:  60.46; ppl:  5.70; xent: 1.74; lr: 0.00001451;   0/6173 tok/s; 160129 sec
+[2021-11-15 22:32:52,463 INFO] Step 19050/200000; acc:  61.71; ppl:  5.32; xent: 1.67; lr: 0.00001449;   0/5912 tok/s; 160542 sec
+[2021-11-15 22:39:48,716 INFO] Step 19100/200000; acc:  62.26; ppl:  5.16; xent: 1.64; lr: 0.00001447;   0/3602 tok/s; 160959 sec
+[2021-11-15 22:45:13,963 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-15 22:45:18,643 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 22:47:41,141 INFO] Step 19150/200000; acc:  60.97; ppl:  5.45; xent: 1.70; lr: 0.00001445;   0/6009 tok/s; 161431 sec
+[2021-11-15 22:54:21,248 INFO] Step 19200/200000; acc:  60.89; ppl:  5.40; xent: 1.69; lr: 0.00001443;   0/5439 tok/s; 161831 sec
+[2021-11-15 23:00:59,596 INFO] Step 19250/200000; acc:  62.27; ppl:  5.07; xent: 1.62; lr: 0.00001441;   0/5598 tok/s; 162229 sec
+[2021-11-15 23:04:52,800 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-15 23:04:57,357 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 23:08:48,563 INFO] Step 19300/200000; acc:  61.32; ppl:  5.36; xent: 1.68; lr: 0.00001440;   0/5687 tok/s; 162698 sec
+[2021-11-15 23:15:33,832 INFO] Step 19350/200000; acc:  61.31; ppl:  5.30; xent: 1.67; lr: 0.00001438;   0/5007 tok/s; 163104 sec
+[2021-11-15 23:22:30,872 INFO] Step 19400/200000; acc:  60.54; ppl:  5.58; xent: 1.72; lr: 0.00001436;   0/6090 tok/s; 163521 sec
+[2021-11-15 23:24:54,204 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-15 23:24:55,172 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 23:30:40,661 INFO] Step 19450/200000; acc:  61.44; ppl:  5.32; xent: 1.67; lr: 0.00001434;   0/4511 tok/s; 164011 sec
+[2021-11-15 23:37:31,848 INFO] Step 19500/200000; acc:  62.79; ppl:  4.90; xent: 1.59; lr: 0.00001432;   0/5922 tok/s; 164422 sec
+[2021-11-15 23:45:25,944 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-15 23:45:30,601 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-15 23:45:49,355 INFO] Step 19550/200000; acc:  61.90; ppl:  5.23; xent: 1.66; lr: 0.00001430;   0/5246 tok/s; 164919 sec
+[2021-11-15 23:52:45,900 INFO] Step 19600/200000; acc:  61.39; ppl:  5.29; xent: 1.67; lr: 0.00001429;   0/5804 tok/s; 165336 sec
+[2021-11-15 23:59:34,234 INFO] Step 19650/200000; acc:  62.89; ppl:  5.00; xent: 1.61; lr: 0.00001427;   0/5943 tok/s; 165744 sec
+[2021-11-16 00:05:35,733 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 00:05:40,314 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 00:07:23,224 INFO] Step 19700/200000; acc:  62.37; ppl:  5.04; xent: 1.62; lr: 0.00001425;   0/4118 tok/s; 166213 sec
+[2021-11-16 00:14:12,955 INFO] Step 19750/200000; acc:  62.80; ppl:  5.09; xent: 1.63; lr: 0.00001423;   0/3092 tok/s; 166623 sec
+[2021-11-16 00:21:13,407 INFO] Step 19800/200000; acc:  61.68; ppl:  5.24; xent: 1.66; lr: 0.00001421;   0/4842 tok/s; 167043 sec
+[2021-11-16 00:25:40,201 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 00:25:44,863 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 00:29:10,844 INFO] Step 19850/200000; acc:  61.71; ppl:  5.33; xent: 1.67; lr: 0.00001420;   0/3380 tok/s; 167521 sec
+[2021-11-16 00:36:12,324 INFO] Step 19900/200000; acc:  60.20; ppl:  5.67; xent: 1.73; lr: 0.00001418;   0/6452 tok/s; 167942 sec
+[2021-11-16 00:43:07,102 INFO] Step 19950/200000; acc:  61.49; ppl:  5.37; xent: 1.68; lr: 0.00001416;   0/3468 tok/s; 168357 sec
+[2021-11-16 00:45:56,550 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 00:45:57,526 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 00:50:48,304 INFO] Step 20000/200000; acc:  62.61; ppl:  5.03; xent: 1.62; lr: 0.00001414;   0/5477 tok/s; 168818 sec
+[2021-11-16 00:50:48,309 INFO] Saving checkpoint /scratch/new_msmo/model_step_20000.pt
+[2021-11-16 00:57:35,396 INFO] Step 20050/200000; acc:  61.59; ppl:  5.23; xent: 1.65; lr: 0.00001412;   0/3710 tok/s; 169225 sec
+[2021-11-16 01:04:48,736 INFO] Step 20100/200000; acc:  62.41; ppl:  5.04; xent: 1.62; lr: 0.00001411;   0/1339 tok/s; 169659 sec
+[2021-11-16 01:05:44,151 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 01:05:48,713 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 01:12:09,689 INFO] Step 20150/200000; acc:  62.39; ppl:  5.06; xent: 1.62; lr: 0.00001409;   0/4992 tok/s; 170100 sec
+[2021-11-16 01:19:01,999 INFO] Step 20200/200000; acc:  62.36; ppl:  5.08; xent: 1.62; lr: 0.00001407;   0/5256 tok/s; 170512 sec
+[2021-11-16 01:25:37,357 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 01:25:41,933 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 01:26:50,039 INFO] Step 20250/200000; acc:  62.62; ppl:  5.05; xent: 1.62; lr: 0.00001405;   0/5764 tok/s; 170980 sec
+[2021-11-16 01:33:31,853 INFO] Step 20300/200000; acc:  61.72; ppl:  5.31; xent: 1.67; lr: 0.00001404;   0/3946 tok/s; 171382 sec
+[2021-11-16 01:40:13,946 INFO] Step 20350/200000; acc:  63.32; ppl:  4.80; xent: 1.57; lr: 0.00001402;   0/3655 tok/s; 171784 sec
+[2021-11-16 01:45:08,955 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 01:45:13,608 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 01:47:54,234 INFO] Step 20400/200000; acc:  61.89; ppl:  5.18; xent: 1.64; lr: 0.00001400;   0/4575 tok/s; 172244 sec
+[2021-11-16 01:54:42,829 INFO] Step 20450/200000; acc:  61.80; ppl:  5.29; xent: 1.67; lr: 0.00001399;   0/5499 tok/s; 172653 sec
+[2021-11-16 02:01:27,478 INFO] Step 20500/200000; acc:  62.28; ppl:  5.13; xent: 1.64; lr: 0.00001397;   0/5936 tok/s; 173057 sec
+[2021-11-16 02:05:07,557 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 02:05:08,534 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 02:09:20,045 INFO] Step 20550/200000; acc:  61.36; ppl:  5.19; xent: 1.65; lr: 0.00001395;   0/3844 tok/s; 173530 sec
+[2021-11-16 02:16:19,125 INFO] Step 20600/200000; acc:  63.61; ppl:  4.74; xent: 1.56; lr: 0.00001393;   0/3940 tok/s; 173949 sec
+[2021-11-16 02:23:18,388 INFO] Step 20650/200000; acc:  62.59; ppl:  5.05; xent: 1.62; lr: 0.00001392;   0/3928 tok/s; 174368 sec
+[2021-11-16 02:25:29,874 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 02:25:34,531 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 02:31:31,055 INFO] Step 20700/200000; acc:  62.06; ppl:  5.13; xent: 1.64; lr: 0.00001390;   0/5998 tok/s; 174861 sec
+[2021-11-16 02:38:44,818 INFO] Step 20750/200000; acc:  61.30; ppl:  5.28; xent: 1.66; lr: 0.00001388;   0/6078 tok/s; 175295 sec
+[2021-11-16 02:46:03,307 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 02:46:07,867 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 02:46:41,817 INFO] Step 20800/200000; acc:  62.74; ppl:  5.02; xent: 1.61; lr: 0.00001387;   0/5590 tok/s; 175772 sec
+[2021-11-16 02:53:32,613 INFO] Step 20850/200000; acc:  63.17; ppl:  4.90; xent: 1.59; lr: 0.00001385;   0/5515 tok/s; 176182 sec
+[2021-11-16 03:00:20,385 INFO] Step 20900/200000; acc:  61.41; ppl:  5.28; xent: 1.66; lr: 0.00001383;   0/6184 tok/s; 176590 sec
+[2021-11-16 03:06:03,853 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 03:06:08,451 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 03:08:10,779 INFO] Step 20950/200000; acc:  61.29; ppl:  5.37; xent: 1.68; lr: 0.00001382;   0/5461 tok/s; 177061 sec
+[2021-11-16 03:15:00,373 INFO] Step 21000/200000; acc:  61.65; ppl:  5.17; xent: 1.64; lr: 0.00001380;   0/6020 tok/s; 177470 sec
+[2021-11-16 03:21:54,338 INFO] Step 21050/200000; acc:  61.01; ppl:  5.37; xent: 1.68; lr: 0.00001378;   0/5556 tok/s; 177884 sec
+[2021-11-16 03:26:01,752 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 03:26:02,704 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 03:29:40,074 INFO] Step 21100/200000; acc:  61.43; ppl:  5.12; xent: 1.63; lr: 0.00001377;   0/6769 tok/s; 178350 sec
+[2021-11-16 03:36:22,689 INFO] Step 21150/200000; acc:  63.30; ppl:  4.76; xent: 1.56; lr: 0.00001375;   0/5615 tok/s; 178753 sec
+[2021-11-16 03:43:10,266 INFO] Step 21200/200000; acc:  61.94; ppl:  5.13; xent: 1.64; lr: 0.00001374;   0/5218 tok/s; 179160 sec
+[2021-11-16 03:45:53,306 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 03:45:57,967 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 03:51:10,246 INFO] Step 21250/200000; acc:  62.59; ppl:  5.04; xent: 1.62; lr: 0.00001372;   0/3782 tok/s; 179640 sec
+[2021-11-16 03:58:08,111 INFO] Step 21300/200000; acc:  61.54; ppl:  5.15; xent: 1.64; lr: 0.00001370;   0/5130 tok/s; 180058 sec
+[2021-11-16 04:05:46,150 INFO] Step 21350/200000; acc:  63.11; ppl:  4.85; xent: 1.58; lr: 0.00001369;   0/5830 tok/s; 180516 sec
+[2021-11-16 04:05:57,694 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 04:06:02,402 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 04:12:39,915 INFO] Step 21400/200000; acc:  62.15; ppl:  5.13; xent: 1.63; lr: 0.00001367;   0/6310 tok/s; 180930 sec
+[2021-11-16 04:19:29,969 INFO] Step 21450/200000; acc:  62.73; ppl:  4.96; xent: 1.60; lr: 0.00001366;   0/4007 tok/s; 181340 sec
+[2021-11-16 04:25:39,376 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 04:25:43,917 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 04:27:14,951 INFO] Step 21500/200000; acc:  63.25; ppl:  4.87; xent: 1.58; lr: 0.00001364;   0/3538 tok/s; 181805 sec
+[2021-11-16 04:34:13,150 INFO] Step 21550/200000; acc:  62.91; ppl:  4.90; xent: 1.59; lr: 0.00001362;   0/3588 tok/s; 182223 sec
+[2021-11-16 04:41:01,076 INFO] Step 21600/200000; acc:  61.83; ppl:  5.23; xent: 1.65; lr: 0.00001361;   0/5860 tok/s; 182631 sec
+[2021-11-16 04:45:45,695 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 04:45:46,684 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 04:48:40,799 INFO] Step 21650/200000; acc:  63.95; ppl:  4.74; xent: 1.56; lr: 0.00001359;   0/6057 tok/s; 183091 sec
+[2021-11-16 04:55:21,774 INFO] Step 21700/200000; acc:  62.49; ppl:  5.02; xent: 1.61; lr: 0.00001358;   0/6283 tok/s; 183492 sec
+[2021-11-16 05:02:01,216 INFO] Step 21750/200000; acc:  63.22; ppl:  4.80; xent: 1.57; lr: 0.00001356;   0/5422 tok/s; 183891 sec
+[2021-11-16 05:05:25,558 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 05:05:30,136 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 05:10:03,812 INFO] Step 21800/200000; acc:  61.26; ppl:  5.24; xent: 1.66; lr: 0.00001355;   0/3537 tok/s; 184374 sec
+[2021-11-16 05:17:08,653 INFO] Step 21850/200000; acc:  63.08; ppl:  4.89; xent: 1.59; lr: 0.00001353;   0/3152 tok/s; 184799 sec
+[2021-11-16 05:24:14,550 INFO] Step 21900/200000; acc:  63.16; ppl:  4.77; xent: 1.56; lr: 0.00001351;   0/5358 tok/s; 185224 sec
+[2021-11-16 05:25:40,524 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 05:25:45,077 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 05:31:51,836 INFO] Step 21950/200000; acc:  62.58; ppl:  4.96; xent: 1.60; lr: 0.00001350;   0/5535 tok/s; 185682 sec
+[2021-11-16 05:39:00,098 INFO] Step 22000/200000; acc:  62.19; ppl:  5.09; xent: 1.63; lr: 0.00001348;   0/5701 tok/s; 186110 sec
+[2021-11-16 05:39:00,103 INFO] Saving checkpoint /scratch/new_msmo/model_step_22000.pt
+[2021-11-16 05:45:51,555 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 05:45:56,202 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 05:46:52,360 INFO] Step 22050/200000; acc:  62.78; ppl:  5.00; xent: 1.61; lr: 0.00001347;   0/3672 tok/s; 186582 sec
+[2021-11-16 05:53:37,726 INFO] Step 22100/200000; acc:  61.50; ppl:  5.25; xent: 1.66; lr: 0.00001345;   0/5084 tok/s; 186988 sec
+[2021-11-16 06:00:30,205 INFO] Step 22150/200000; acc:  61.67; ppl:  5.18; xent: 1.65; lr: 0.00001344;   0/5970 tok/s; 187400 sec
+[2021-11-16 06:05:53,577 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 06:05:54,564 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 06:08:12,376 INFO] Step 22200/200000; acc:  62.67; ppl:  4.91; xent: 1.59; lr: 0.00001342;   0/6012 tok/s; 187862 sec
+[2021-11-16 06:14:55,421 INFO] Step 22250/200000; acc:  61.66; ppl:  5.16; xent: 1.64; lr: 0.00001341;   0/3190 tok/s; 188265 sec
+[2021-11-16 06:21:36,022 INFO] Step 22300/200000; acc:  63.36; ppl:  4.78; xent: 1.57; lr: 0.00001339;   0/3440 tok/s; 188666 sec
+[2021-11-16 06:25:38,524 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 06:25:43,114 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 06:29:37,135 INFO] Step 22350/200000; acc:  62.25; ppl:  5.12; xent: 1.63; lr: 0.00001338;   0/5277 tok/s; 189147 sec
+[2021-11-16 06:36:38,896 INFO] Step 22400/200000; acc:  62.65; ppl:  4.95; xent: 1.60; lr: 0.00001336;   0/4426 tok/s; 189569 sec
+[2021-11-16 06:43:29,712 INFO] Step 22450/200000; acc:  62.08; ppl:  5.02; xent: 1.61; lr: 0.00001335;   0/5513 tok/s; 189980 sec
+[2021-11-16 06:45:52,894 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 06:45:57,566 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 06:51:13,138 INFO] Step 22500/200000; acc:  63.11; ppl:  4.87; xent: 1.58; lr: 0.00001333;   0/4758 tok/s; 190443 sec
+[2021-11-16 06:58:04,861 INFO] Step 22550/200000; acc:  62.46; ppl:  5.12; xent: 1.63; lr: 0.00001332;   0/5187 tok/s; 190855 sec
+[2021-11-16 07:05:27,262 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 07:05:31,836 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 07:05:51,527 INFO] Step 22600/200000; acc:  61.30; ppl:  5.27; xent: 1.66; lr: 0.00001330;   0/4865 tok/s; 191321 sec
+[2021-11-16 07:12:34,635 INFO] Step 22650/200000; acc:  62.07; ppl:  5.13; xent: 1.64; lr: 0.00001329;   0/5420 tok/s; 191724 sec
+[2021-11-16 07:19:22,876 INFO] Step 22700/200000; acc:  63.30; ppl:  4.83; xent: 1.57; lr: 0.00001327;   0/5240 tok/s; 192133 sec
+[2021-11-16 07:25:23,206 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 07:25:24,153 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 07:27:08,638 INFO] Step 22750/200000; acc:  63.65; ppl:  4.70; xent: 1.55; lr: 0.00001326;   0/3868 tok/s; 192598 sec
+[2021-11-16 07:33:46,365 INFO] Step 22800/200000; acc:  62.59; ppl:  4.89; xent: 1.59; lr: 0.00001325;   0/3921 tok/s; 192996 sec
+[2021-11-16 07:40:22,692 INFO] Step 22850/200000; acc:  63.56; ppl:  4.75; xent: 1.56; lr: 0.00001323;   0/5638 tok/s; 193393 sec
+[2021-11-16 07:44:56,068 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 07:45:00,665 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 07:48:22,195 INFO] Step 22900/200000; acc:  63.16; ppl:  4.89; xent: 1.59; lr: 0.00001322;   0/6804 tok/s; 193872 sec
+[2021-11-16 07:55:10,001 INFO] Step 22950/200000; acc:  63.62; ppl:  4.81; xent: 1.57; lr: 0.00001320;   0/5710 tok/s; 194280 sec
+[2021-11-16 08:01:57,377 INFO] Step 23000/200000; acc:  63.79; ppl:  4.67; xent: 1.54; lr: 0.00001319;   0/4870 tok/s; 194687 sec
+[2021-11-16 08:04:53,747 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 08:04:58,430 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 08:09:42,284 INFO] Step 23050/200000; acc:  62.69; ppl:  4.97; xent: 1.60; lr: 0.00001317;   0/4010 tok/s; 195152 sec
+[2021-11-16 08:16:30,191 INFO] Step 23100/200000; acc:  62.16; ppl:  5.11; xent: 1.63; lr: 0.00001316;   0/3211 tok/s; 195560 sec
+[2021-11-16 08:23:42,204 INFO] Step 23150/200000; acc:  61.71; ppl:  5.20; xent: 1.65; lr: 0.00001314;   0/5085 tok/s; 195992 sec
+[2021-11-16 08:24:37,761 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 08:24:42,424 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 08:31:02,716 INFO] Step 23200/200000; acc:  61.42; ppl:  5.26; xent: 1.66; lr: 0.00001313;   0/6426 tok/s; 196433 sec
+[2021-11-16 08:38:00,875 INFO] Step 23250/200000; acc:  61.58; ppl:  5.25; xent: 1.66; lr: 0.00001312;   0/6171 tok/s; 196851 sec
+[2021-11-16 08:44:35,193 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 08:44:36,177 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 08:45:44,665 INFO] Step 23300/200000; acc:  62.97; ppl:  4.83; xent: 1.57; lr: 0.00001310;   0/3669 tok/s; 197315 sec
+[2021-11-16 08:52:31,162 INFO] Step 23350/200000; acc:  63.21; ppl:  4.79; xent: 1.57; lr: 0.00001309;   0/5115 tok/s; 197721 sec
+[2021-11-16 08:59:12,064 INFO] Step 23400/200000; acc:  63.26; ppl:  4.77; xent: 1.56; lr: 0.00001307;   0/5333 tok/s; 198122 sec
+[2021-11-16 09:04:33,748 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 09:04:38,379 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 09:07:28,916 INFO] Step 23450/200000; acc:  62.81; ppl:  4.97; xent: 1.60; lr: 0.00001306;   0/4600 tok/s; 198619 sec
+[2021-11-16 09:14:39,533 INFO] Step 23500/200000; acc:  63.01; ppl:  4.87; xent: 1.58; lr: 0.00001305;   0/4670 tok/s; 199049 sec
+[2021-11-16 09:21:44,381 INFO] Step 23550/200000; acc:  62.82; ppl:  4.95; xent: 1.60; lr: 0.00001303;   0/3677 tok/s; 199474 sec
+[2021-11-16 09:25:20,823 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 09:25:25,458 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 09:29:40,247 INFO] Step 23600/200000; acc:  62.11; ppl:  5.08; xent: 1.63; lr: 0.00001302;   0/5931 tok/s; 199950 sec
+[2021-11-16 09:36:19,211 INFO] Step 23650/200000; acc:  62.80; ppl:  4.86; xent: 1.58; lr: 0.00001301;   0/5619 tok/s; 200349 sec
+[2021-11-16 09:42:55,348 INFO] Step 23700/200000; acc:  62.46; ppl:  4.94; xent: 1.60; lr: 0.00001299;   0/6021 tok/s; 200745 sec
+[2021-11-16 09:45:00,115 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 09:45:04,630 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 09:50:53,826 INFO] Step 23750/200000; acc:  61.63; ppl:  5.24; xent: 1.66; lr: 0.00001298;   0/3257 tok/s; 201224 sec
+[2021-11-16 09:57:47,361 INFO] Step 23800/200000; acc:  62.66; ppl:  5.03; xent: 1.62; lr: 0.00001296;   0/3800 tok/s; 201637 sec
+[2021-11-16 10:05:00,020 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 10:05:01,003 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 10:05:29,296 INFO] Step 23850/200000; acc:  62.76; ppl:  4.90; xent: 1.59; lr: 0.00001295;   0/6249 tok/s; 202099 sec
+[2021-11-16 10:12:11,638 INFO] Step 23900/200000; acc:  62.64; ppl:  5.00; xent: 1.61; lr: 0.00001294;   0/6940 tok/s; 202501 sec
+[2021-11-16 10:18:53,646 INFO] Step 23950/200000; acc:  62.72; ppl:  4.89; xent: 1.59; lr: 0.00001292;   0/5739 tok/s; 202904 sec
+[2021-11-16 10:24:38,668 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 10:24:43,246 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 10:26:52,359 INFO] Step 24000/200000; acc:  63.69; ppl:  4.75; xent: 1.56; lr: 0.00001291;   0/5368 tok/s; 203382 sec
+[2021-11-16 10:26:52,363 INFO] Saving checkpoint /scratch/new_msmo/model_step_24000.pt
+[2021-11-16 10:33:45,869 INFO] Step 24050/200000; acc:  62.06; ppl:  5.08; xent: 1.63; lr: 0.00001290;   0/5548 tok/s; 203796 sec
+[2021-11-16 10:40:30,103 INFO] Step 24100/200000; acc:  61.94; ppl:  5.16; xent: 1.64; lr: 0.00001288;   0/5840 tok/s; 204200 sec
+[2021-11-16 10:44:37,698 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 10:44:42,328 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 10:48:16,076 INFO] Step 24150/200000; acc:  62.95; ppl:  4.77; xent: 1.56; lr: 0.00001287;   0/5799 tok/s; 204666 sec
+[2021-11-16 10:54:58,878 INFO] Step 24200/200000; acc:  62.10; ppl:  5.10; xent: 1.63; lr: 0.00001286;   0/5089 tok/s; 205069 sec
+[2021-11-16 11:01:48,638 INFO] Step 24250/200000; acc:  63.32; ppl:  4.70; xent: 1.55; lr: 0.00001284;   0/4752 tok/s; 205478 sec
+[2021-11-16 11:04:31,589 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 11:04:36,232 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 11:09:56,845 INFO] Step 24300/200000; acc:  61.17; ppl:  5.37; xent: 1.68; lr: 0.00001283;   0/3691 tok/s; 205967 sec
+[2021-11-16 11:17:05,260 INFO] Step 24350/200000; acc:  61.97; ppl:  5.03; xent: 1.61; lr: 0.00001282;   0/5394 tok/s; 206395 sec
+[2021-11-16 11:24:48,403 INFO] Step 24400/200000; acc:  63.72; ppl:  4.63; xent: 1.53; lr: 0.00001280;   0/4991 tok/s; 206858 sec
+[2021-11-16 11:25:03,778 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 11:25:04,758 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 11:31:33,610 INFO] Step 24450/200000; acc:  63.53; ppl:  4.71; xent: 1.55; lr: 0.00001279;   0/5230 tok/s; 207263 sec
+[2021-11-16 11:38:19,911 INFO] Step 24500/200000; acc:  62.90; ppl:  4.79; xent: 1.57; lr: 0.00001278;   0/3926 tok/s; 207670 sec
+[2021-11-16 11:44:41,668 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 11:44:46,162 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 11:46:16,756 INFO] Step 24550/200000; acc:  62.87; ppl:  4.84; xent: 1.58; lr: 0.00001276;   0/3585 tok/s; 208147 sec
+[2021-11-16 11:53:03,368 INFO] Step 24600/200000; acc:  62.84; ppl:  4.95; xent: 1.60; lr: 0.00001275;   0/5527 tok/s; 208553 sec
+[2021-11-16 11:59:48,394 INFO] Step 24650/200000; acc:  62.57; ppl:  4.95; xent: 1.60; lr: 0.00001274;   0/5402 tok/s; 208958 sec
+[2021-11-16 12:04:25,432 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 12:04:30,089 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 12:07:30,847 INFO] Step 24700/200000; acc:  62.94; ppl:  4.89; xent: 1.59; lr: 0.00001273;   0/5270 tok/s; 209421 sec
+[2021-11-16 12:14:25,978 INFO] Step 24750/200000; acc:  62.09; ppl:  5.10; xent: 1.63; lr: 0.00001271;   0/3545 tok/s; 209836 sec
+[2021-11-16 12:21:07,946 INFO] Step 24800/200000; acc:  63.55; ppl:  4.78; xent: 1.57; lr: 0.00001270;   0/3590 tok/s; 210238 sec
+[2021-11-16 12:24:19,455 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 12:24:24,104 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 12:28:54,927 INFO] Step 24850/200000; acc:  62.68; ppl:  4.91; xent: 1.59; lr: 0.00001269;   0/5365 tok/s; 210705 sec
+[2021-11-16 12:35:44,807 INFO] Step 24900/200000; acc:  63.11; ppl:  4.90; xent: 1.59; lr: 0.00001267;   0/6355 tok/s; 211115 sec
+[2021-11-16 12:42:46,138 INFO] Step 24950/200000; acc:  63.22; ppl:  4.87; xent: 1.58; lr: 0.00001266;   0/5947 tok/s; 211536 sec
+[2021-11-16 12:44:18,679 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 12:44:19,636 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 12:50:24,901 INFO] Step 25000/200000; acc:  63.58; ppl:  4.69; xent: 1.55; lr: 0.00001265;   0/3897 tok/s; 211995 sec
+[2021-11-16 12:57:08,155 INFO] Step 25050/200000; acc:  62.64; ppl:  4.85; xent: 1.58; lr: 0.00001264;   0/3769 tok/s; 212398 sec
+[2021-11-16 13:04:12,109 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 13:04:16,706 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 13:05:05,947 INFO] Step 25100/200000; acc:  63.48; ppl:  4.75; xent: 1.56; lr: 0.00001262;   0/5447 tok/s; 212876 sec
+[2021-11-16 13:11:55,097 INFO] Step 25150/200000; acc:  63.52; ppl:  4.74; xent: 1.56; lr: 0.00001261;   0/5659 tok/s; 213285 sec
+[2021-11-16 13:18:47,412 INFO] Step 25200/200000; acc:  64.17; ppl:  4.55; xent: 1.51; lr: 0.00001260;   0/5975 tok/s; 213697 sec
+[2021-11-16 13:24:11,378 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 13:24:16,031 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 13:26:47,577 INFO] Step 25250/200000; acc:  62.25; ppl:  5.13; xent: 1.64; lr: 0.00001259;   0/4159 tok/s; 214177 sec
+[2021-11-16 13:33:30,001 INFO] Step 25300/200000; acc:  63.45; ppl:  4.66; xent: 1.54; lr: 0.00001257;   0/3878 tok/s; 214580 sec
+[2021-11-16 13:40:15,085 INFO] Step 25350/200000; acc:  62.58; ppl:  4.98; xent: 1.60; lr: 0.00001256;   0/5521 tok/s; 214985 sec
+[2021-11-16 13:44:09,069 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 13:44:13,693 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 13:48:06,844 INFO] Step 25400/200000; acc:  63.69; ppl:  4.69; xent: 1.55; lr: 0.00001255;   0/6328 tok/s; 215457 sec
+[2021-11-16 13:54:51,445 INFO] Step 25450/200000; acc:  63.49; ppl:  4.77; xent: 1.56; lr: 0.00001254;   0/5003 tok/s; 215861 sec
+[2021-11-16 14:01:42,255 INFO] Step 25500/200000; acc:  63.25; ppl:  4.80; xent: 1.57; lr: 0.00001252;   0/4807 tok/s; 216272 sec
+[2021-11-16 14:03:59,006 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 14:03:59,995 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 14:09:33,463 INFO] Step 25550/200000; acc:  63.27; ppl:  4.72; xent: 1.55; lr: 0.00001251;   0/5536 tok/s; 216743 sec
+[2021-11-16 14:16:27,847 INFO] Step 25600/200000; acc:  63.77; ppl:  4.65; xent: 1.54; lr: 0.00001250;   0/5267 tok/s; 217158 sec
+[2021-11-16 14:24:13,610 INFO] Loading train dataset from /scratch/full_data_pt/train.1.bert.pt, number of examples: 71752
+[2021-11-16 14:24:18,135 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 14:24:36,016 INFO] Step 25650/200000; acc:  63.68; ppl:  4.68; xent: 1.54; lr: 0.00001249;   0/5472 tok/s; 217646 sec
+[2021-11-16 14:31:26,032 INFO] Step 25700/200000; acc:  63.86; ppl:  4.61; xent: 1.53; lr: 0.00001248;   0/6161 tok/s; 218056 sec
+[2021-11-16 14:38:28,350 INFO] Step 25750/200000; acc:  62.83; ppl:  4.85; xent: 1.58; lr: 0.00001246;   0/5151 tok/s; 218478 sec
+[2021-11-16 14:44:20,401 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 14:44:25,100 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 14:46:20,727 INFO] Step 25800/200000; acc:  61.77; ppl:  5.13; xent: 1.64; lr: 0.00001245;   0/3881 tok/s; 218951 sec
+[2021-11-16 14:53:17,668 INFO] Step 25850/200000; acc:  63.16; ppl:  4.74; xent: 1.56; lr: 0.00001244;   0/5524 tok/s; 219368 sec
+[2021-11-16 15:00:00,229 INFO] Step 25900/200000; acc:  63.69; ppl:  4.77; xent: 1.56; lr: 0.00001243;   0/6255 tok/s; 219770 sec
+[2021-11-16 15:04:23,812 INFO] Loading train dataset from /scratch/full_data_pt/train.0.bert.pt, number of examples: 71770
+[2021-11-16 15:04:28,504 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 15:07:44,118 INFO] Step 25950/200000; acc:  62.10; ppl:  5.06; xent: 1.62; lr: 0.00001242;   0/6049 tok/s; 220234 sec
+[2021-11-16 15:14:43,612 INFO] Step 26000/200000; acc:  62.26; ppl:  5.02; xent: 1.61; lr: 0.00001240;   0/5202 tok/s; 220653 sec
+[2021-11-16 15:14:43,616 INFO] Saving checkpoint /scratch/new_msmo/model_step_26000.pt
+[2021-11-16 15:21:51,904 INFO] Step 26050/200000; acc:  62.81; ppl:  4.88; xent: 1.59; lr: 0.00001239;   0/3488 tok/s; 221082 sec
+[2021-11-16 15:24:46,914 INFO] Loading train dataset from /scratch/full_data_pt/train.2.bert.pt, number of examples: 71770
+[2021-11-16 15:24:47,902 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 15:29:34,783 INFO] Step 26100/200000; acc:  63.64; ppl:  4.62; xent: 1.53; lr: 0.00001238;   0/4216 tok/s; 221545 sec
+[2021-11-16 15:36:17,288 INFO] Step 26150/200000; acc:  63.20; ppl:  4.73; xent: 1.55; lr: 0.00001237;   0/4779 tok/s; 221947 sec
+[2021-11-16 15:43:39,455 INFO] Step 26200/200000; acc:  62.74; ppl:  4.88; xent: 1.58; lr: 0.00001236;   0/4960 tok/s; 222389 sec
+[2021-11-16 15:44:33,095 INFO] Loading train dataset from /scratch/full_data_pt/train.3.bert.pt, number of examples: 71722
+[2021-11-16 15:44:37,699 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-11-16 15:50:59,976 INFO] Step 26250/200000; acc:  62.98; ppl:  4.84; xent: 1.58; lr: 0.00001234;   0/4426 tok/s; 222830 sec

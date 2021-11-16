@@ -1,0 +1,70 @@
+==========================================
+SLURM_JOB_ID = 517684
+SLURM_NODELIST = gnode33
+SLURM_JOB_GPUS = 0,1
+==========================================
+[2021-10-26 03:13:23,524 INFO] Loading checkpoint from /scratch/new_msmo/model_step_26000.pt
+[2021-10-26 03:13:42,993 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-26 03:13:42,994 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-26 03:13:42,995 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-26 03:13:58,252 INFO] Loading test dataset from ../bert_data/test.1.bert.pt, number of examples: 10256
+[2021-10-26 03:13:59,372 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-26 03:13:59,578 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-26 07:27:11,632 INFO] Calculating Rouge
+2021-10-26 07:27:22,859 [MainThread  ] [INFO ]  Writing summaries.
+[2021-10-26 07:27:22,859 INFO] Writing summaries.
+2021-10-26 07:27:22,867 [MainThread  ] [INFO ]  Processing summaries. Saving system files to ../temp/tmp1n2vv5fy/system and model files to ../temp/tmp1n2vv5fy/model.
+[2021-10-26 07:27:22,867 INFO] Processing summaries. Saving system files to ../temp/tmp1n2vv5fy/system and model files to ../temp/tmp1n2vv5fy/model.
+2021-10-26 07:27:22,867 [MainThread  ] [INFO ]  Processing files in ../temp/rouge-tmp-2021-10-26-07-27-11/candidate/.
+[2021-10-26 07:27:22,867 INFO] Processing files in ../temp/rouge-tmp-2021-10-26-07-27-11/candidate/.
+2021-10-26 07:27:32,688 [MainThread  ] [INFO ]  Saved processed files to ../temp/tmp1n2vv5fy/system.
+[2021-10-26 07:27:32,688 INFO] Saved processed files to ../temp/tmp1n2vv5fy/system.
+2021-10-26 07:27:32,689 [MainThread  ] [INFO ]  Processing files in ../temp/rouge-tmp-2021-10-26-07-27-11/reference/.
+[2021-10-26 07:27:32,689 INFO] Processing files in ../temp/rouge-tmp-2021-10-26-07-27-11/reference/.
+2021-10-26 07:27:43,048 [MainThread  ] [INFO ]  Saved processed files to ../temp/tmp1n2vv5fy/model.
+[2021-10-26 07:27:43,048 INFO] Saved processed files to ../temp/tmp1n2vv5fy/model.
+2021-10-26 07:27:43,285 [MainThread  ] [INFO ]  Written ROUGE configuration to ../temp/tmpzhvb9rdp/rouge_conf.xml
+[2021-10-26 07:27:43,285 INFO] Written ROUGE configuration to ../temp/tmpzhvb9rdp/rouge_conf.xml
+2021-10-26 07:27:43,286 [MainThread  ] [INFO ]  Running ROUGE with command /home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/pyrouge/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/pyrouge/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpzhvb9rdp/rouge_conf.xml
+[2021-10-26 07:27:43,286 INFO] Running ROUGE with command /home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/pyrouge/rouge/tools/ROUGE-1.5.5/ROUGE-1.5.5.pl -e /home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/pyrouge/rouge/tools/ROUGE-1.5.5/data -c 95 -m -r 1000 -n 2 -a ../temp/tmpzhvb9rdp/rouge_conf.xml
+[2021-10-26 07:29:40,851 INFO] Rouges at step 26000 
+>> ROUGE-F(1/2/3/l): 41.95/19.26/39.07
+ROUGE-R(1/2/3/l): 44.50/20.41/41.41
+
+Namespace(accum_count=1, alpha=0.95, batch_size=140, beam_size=5, bert_data_path='../bert_data/', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_log', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='test', model_path='../models/', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='test', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=False, test_batch_size=50, test_from='/scratch/new_msmo/model_step_26000.pt', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+10252
+10252
+---------------------------------------------
+1 ROUGE-1 Average_R: 0.44499 (95%-conf.int. 0.44233 - 0.44768)
+1 ROUGE-1 Average_P: 0.41943 (95%-conf.int. 0.41666 - 0.42232)
+1 ROUGE-1 Average_F: 0.41954 (95%-conf.int. 0.41721 - 0.42200)
+---------------------------------------------
+1 ROUGE-2 Average_R: 0.20407 (95%-conf.int. 0.20149 - 0.20687)
+1 ROUGE-2 Average_P: 0.19307 (95%-conf.int. 0.19047 - 0.19578)
+1 ROUGE-2 Average_F: 0.19261 (95%-conf.int. 0.19027 - 0.19529)
+---------------------------------------------
+1 ROUGE-L Average_R: 0.41412 (95%-conf.int. 0.41158 - 0.41676)
+1 ROUGE-L Average_P: 0.39080 (95%-conf.int. 0.38812 - 0.39365)
+1 ROUGE-L Average_F: 0.39067 (95%-conf.int. 0.38839 - 0.39307)
+
+15377.412826538086

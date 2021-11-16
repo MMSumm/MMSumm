@@ -1,0 +1,106 @@
+[('train', '/scratch/full_data_new_2/train.1.json', Namespace(dataset='', log_file='../logs/preprocess.log', lower=True, map_path='../../data/', max_src_nsents=100, max_src_ntokens_per_sent=200, max_tgt_ntokens=500, min_src_nsents=3, min_src_ntokens_per_sent=5, min_tgt_ntokens=5, mode='format_to_bert', n_cpus=1, pretrained_model='bert', raw_path='/scratch/full_data_new_2', save_path='/scratch/full_data_pt', select_mode='greedy', shard_size=2000, use_bert_basic_tokenizer=False), '/scratch/full_data_pt/train.1.bert.pt'), ('train', '/scratch/full_data_new_2/train.0.json', Namespace(dataset='', log_file='../logs/preprocess.log', lower=True, map_path='../../data/', max_src_nsents=100, max_src_ntokens_per_sent=200, max_tgt_ntokens=500, min_src_nsents=3, min_src_ntokens_per_sent=5, min_tgt_ntokens=5, mode='format_to_bert', n_cpus=1, pretrained_model='bert', raw_path='/scratch/full_data_new_2', save_path='/scratch/full_data_pt', select_mode='greedy', shard_size=2000, use_bert_basic_tokenizer=False), '/scratch/full_data_pt/train.0.bert.pt'), ('train', '/scratch/full_data_new_2/train.3.json', Namespace(dataset='', log_file='../logs/preprocess.log', lower=True, map_path='../../data/', max_src_nsents=100, max_src_ntokens_per_sent=200, max_tgt_ntokens=500, min_src_nsents=3, min_src_ntokens_per_sent=5, min_tgt_ntokens=5, mode='format_to_bert', n_cpus=1, pretrained_model='bert', raw_path='/scratch/full_data_new_2', save_path='/scratch/full_data_pt', select_mode='greedy', shard_size=2000, use_bert_basic_tokenizer=False), '/scratch/full_data_pt/train.3.bert.pt'), ('train', '/scratch/full_data_new_2/train.2.json', Namespace(dataset='', log_file='../logs/preprocess.log', lower=True, map_path='../../data/', max_src_nsents=100, max_src_ntokens_per_sent=200, max_tgt_ntokens=500, min_src_nsents=3, min_src_ntokens_per_sent=5, min_tgt_ntokens=5, mode='format_to_bert', n_cpus=1, pretrained_model='bert', raw_path='/scratch/full_data_new_2', save_path='/scratch/full_data_pt', select_mode='greedy', shard_size=2000, use_bert_basic_tokenizer=False), '/scratch/full_data_pt/train.2.bert.pt')]
+[2021-07-28 21:40:41,928 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home2/akshat.gahoi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-28 21:40:41,965 INFO] Processing /scratch/full_data_new_2/train.1.json
+[2021-07-28 21:45:20,963 INFO] Processed instances 71752
+[2021-07-28 21:45:20,964 INFO] Saving to /scratch/full_data_pt/train.1.bert.pt
+[2021-07-28 21:46:17,413 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home2/akshat.gahoi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-28 21:46:17,439 INFO] Processing /scratch/full_data_new_2/train.0.json
+[2021-07-28 21:51:19,581 INFO] Processed instances 71770
+[2021-07-28 21:51:19,581 INFO] Saving to /scratch/full_data_pt/train.0.bert.pt
+[2021-07-28 21:52:28,657 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home2/akshat.gahoi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-28 21:52:28,687 INFO] Processing /scratch/full_data_new_2/train.3.json
+[2021-07-28 21:57:35,420 INFO] Processed instances 71722
+[2021-07-28 21:57:35,420 INFO] Saving to /scratch/full_data_pt/train.3.bert.pt
+[2021-07-28 21:58:37,994 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home2/akshat.gahoi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-28 21:58:38,022 INFO] Processing /scratch/full_data_new_2/train.2.json
+[2021-07-28 22:03:26,349 INFO] Processed instances 71770
+[2021-07-28 22:03:26,350 INFO] Saving to /scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.1.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.0.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.3.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+/scratch/full_data_pt/train.2.bert.pt
+[]
+[]

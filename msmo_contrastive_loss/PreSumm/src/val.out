@@ -1,0 +1,596 @@
+[2021-10-08 22:33:26,929 INFO] Loading checkpoint from /scratch/new_msmo/model_step_14000.pt
+[2021-10-08 22:33:39,530 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 22:33:39,541 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 22:33:39,543 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 22:33:55,315 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 22:33:56,494 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 22:33:56,754 INFO] * number of parameters: 197554746
+[2021-10-08 22:33:56,756 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 22:44:07,977 INFO] Validation perplexity: 137.474
+[2021-10-08 22:44:07,978 INFO] Validation accuracy: 59.6227
+[2021-10-08 22:44:08,064 INFO] Loading checkpoint from /scratch/new_msmo/model_step_30000.pt
+[2021-10-08 22:44:20,798 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 22:44:20,799 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 22:44:20,800 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 22:44:25,769 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 22:44:26,911 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 22:44:26,965 INFO] * number of parameters: 197554746
+[2021-10-08 22:44:26,966 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 22:52:04,983 INFO] Validation perplexity: 135.658
+[2021-10-08 22:52:05,021 INFO] Validation accuracy: 60.2547
+[2021-10-08 22:52:05,041 INFO] Loading checkpoint from /scratch/new_msmo/model_step_24000.pt
+[2021-10-08 22:52:17,916 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 22:52:17,917 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 22:52:17,917 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 22:52:22,849 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 22:52:23,948 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 22:52:23,998 INFO] * number of parameters: 197554746
+[2021-10-08 22:52:23,999 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:00:02,129 INFO] Validation perplexity: 134.471
+[2021-10-08 23:00:02,167 INFO] Validation accuracy: 60.2367
+[2021-10-08 23:00:02,174 INFO] Loading checkpoint from /scratch/new_msmo/model_step_10000.pt
+[2021-10-08 23:00:14,977 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:00:14,978 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:00:14,979 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:00:19,824 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:00:21,215 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:00:21,269 INFO] * number of parameters: 197554746
+[2021-10-08 23:00:21,271 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:08:01,871 INFO] Validation perplexity: 145.203
+[2021-10-08 23:08:01,909 INFO] Validation accuracy: 58.7426
+[2021-10-08 23:08:01,916 INFO] Loading checkpoint from /scratch/new_msmo/model_step_2000.pt
+[2021-10-08 23:08:14,635 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:08:14,636 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:08:14,637 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:08:19,478 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:08:20,556 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:08:20,605 INFO] * number of parameters: 197554746
+[2021-10-08 23:08:20,607 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:15:57,860 INFO] Validation perplexity: 1281.88
+[2021-10-08 23:15:57,898 INFO] Validation accuracy: 25.3163
+[2021-10-08 23:15:57,907 INFO] Loading checkpoint from /scratch/new_msmo/model_step_26000.pt
+[2021-10-08 23:16:10,737 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:16:10,738 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:16:10,739 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:16:15,605 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:16:16,718 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:16:16,772 INFO] * number of parameters: 197554746
+[2021-10-08 23:16:16,774 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:23:54,621 INFO] Validation perplexity: 134.119
+[2021-10-08 23:23:54,658 INFO] Validation accuracy: 60.287
+[2021-10-08 23:23:54,708 INFO] Loading checkpoint from /scratch/new_msmo/model_step_28000.pt
+[2021-10-08 23:24:07,513 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:24:07,514 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:24:07,515 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:24:12,370 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:24:13,443 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:24:13,492 INFO] * number of parameters: 197554746
+[2021-10-08 23:24:13,494 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:31:52,885 INFO] Validation perplexity: 135.056
+[2021-10-08 23:31:52,922 INFO] Validation accuracy: 60.272
+[2021-10-08 23:31:52,938 INFO] Loading checkpoint from /scratch/new_msmo/model_step_34000.pt
+[2021-10-08 23:32:05,732 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:32:05,733 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:32:05,734 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:32:10,600 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:32:11,716 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:32:11,770 INFO] * number of parameters: 197554746
+[2021-10-08 23:32:11,771 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:39:48,390 INFO] Validation perplexity: 136.17
+[2021-10-08 23:39:48,428 INFO] Validation accuracy: 60.2352
+[2021-10-08 23:39:48,435 INFO] Loading checkpoint from /scratch/new_msmo/model_step_12000.pt
+[2021-10-08 23:40:01,138 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:40:01,140 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:40:01,140 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:40:05,991 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:40:07,096 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:40:07,146 INFO] * number of parameters: 197554746
+[2021-10-08 23:40:07,147 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:47:46,602 INFO] Validation perplexity: 140.406
+[2021-10-08 23:47:46,639 INFO] Validation accuracy: 59.2176
+[2021-10-08 23:47:46,648 INFO] Loading checkpoint from /scratch/new_msmo/model_step_8000.pt
+[2021-10-08 23:47:59,538 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:47:59,539 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:47:59,540 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:48:04,392 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:48:05,446 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:48:05,495 INFO] * number of parameters: 197554746
+[2021-10-08 23:48:05,497 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-08 23:54:49,275 INFO] Validation perplexity: 159.557
+[2021-10-08 23:54:49,313 INFO] Validation accuracy: 57.2168
+[2021-10-08 23:54:49,321 INFO] Loading checkpoint from /scratch/new_msmo/model_step_38000.pt
+[2021-10-08 23:55:02,355 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-08 23:55:02,356 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-08 23:55:02,357 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-08 23:55:07,242 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-08 23:55:08,301 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-08 23:55:08,350 INFO] * number of parameters: 197554746
+[2021-10-08 23:55:08,351 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:02:46,749 INFO] Validation perplexity: 136.917
+[2021-10-09 00:02:46,787 INFO] Validation accuracy: 60.2408
+[2021-10-09 00:02:46,796 INFO] Loading checkpoint from /scratch/new_msmo/model_step_22000.pt
+[2021-10-09 00:02:59,820 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:02:59,822 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:02:59,822 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:03:04,698 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-09 00:03:05,765 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:03:05,815 INFO] * number of parameters: 197554746
+[2021-10-09 00:03:05,816 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:10:43,161 INFO] Validation perplexity: 134.68
+[2021-10-09 00:10:43,199 INFO] Validation accuracy: 60.1884
+[2021-10-09 00:10:43,206 INFO] Loading checkpoint from /scratch/new_msmo/model_step_20000.pt
+[2021-10-09 00:10:56,208 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:10:56,209 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:10:56,209 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:11:01,065 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-09 00:11:02,150 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:11:02,204 INFO] * number of parameters: 197554746
+[2021-10-09 00:11:02,205 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:18:41,169 INFO] Validation perplexity: 135.772
+[2021-10-09 00:18:41,209 INFO] Validation accuracy: 60.0829
+[2021-10-09 00:18:41,250 INFO] Loading checkpoint from /scratch/new_msmo/model_step_6000.pt
+[2021-10-09 00:18:54,230 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:18:54,231 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:18:54,232 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:18:59,135 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-09 00:19:00,195 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:19:00,249 INFO] * number of parameters: 197554746
+[2021-10-09 00:19:00,251 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:26:37,913 INFO] Validation perplexity: 378.02
+[2021-10-09 00:26:37,950 INFO] Validation accuracy: 38.8221
+[2021-10-09 00:26:37,966 INFO] Loading checkpoint from /scratch/new_msmo/model_step_32000.pt
+[2021-10-09 00:26:48,532 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:26:48,534 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:26:48,534 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:26:53,430 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-09 00:26:54,539 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:26:54,590 INFO] * number of parameters: 197554746
+[2021-10-09 00:26:54,592 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:34:31,471 INFO] Validation perplexity: 135.558
+[2021-10-09 00:34:31,510 INFO] Validation accuracy: 60.2557
+[2021-10-09 00:34:31,517 INFO] Loading checkpoint from /scratch/new_msmo/model_step_36000.pt
+[2021-10-09 00:34:32,331 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:34:32,332 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:34:32,332 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:34:37,164 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-09 00:34:38,245 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:34:38,294 INFO] * number of parameters: 197554746
+[2021-10-09 00:34:38,296 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:42:15,678 INFO] Validation perplexity: 136.425
+[2021-10-09 00:42:15,716 INFO] Validation accuracy: 60.2569
+[2021-10-09 00:42:15,723 INFO] Loading checkpoint from /scratch/new_msmo/model_step_18000.pt
+[2021-10-09 00:42:16,654 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:42:16,654 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:42:16,655 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:42:21,493 INFO] Loading valid dataset from ../bert_data/valid.1.bert.pt, number of examples: 10256
+[2021-10-09 00:42:22,581 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:42:22,636 INFO] * number of parameters: 197554746
+[2021-10-09 00:42:22,637 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 00:49:59,839 INFO] Validation perplexity: 134.717
+[2021-10-09 00:49:59,877 INFO] Validation accuracy: 59.9889
+[2021-10-09 00:49:59,890 INFO] PPL [(4.898726962535228, '/scratch/new_msmo/model_step_26000.pt'), (4.901348389664674, '/scratch/new_msmo/model_step_24000.pt'), (4.902902376726013, '/scratch/new_msmo/model_step_22000.pt'), (4.903174627391163, '/scratch/new_msmo/model_step_18000.pt'), (4.905686087560966, '/scratch/new_msmo/model_step_28000.pt')]
+[2021-10-09 00:49:59,890 INFO] Loading checkpoint from /scratch/new_msmo/model_step_26000.pt
+[2021-10-09 00:50:00,655 INFO] loading configuration file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/config.json
+[2021-10-09 00:50:00,656 INFO] Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2021-10-09 00:50:00,657 INFO] loading weights file /home/anshul.padhi/msmo/PreSumm/src/models/presumm-bert/pytorch_model.bin
+[2021-10-09 00:50:05,736 INFO] Loading test dataset from ../bert_data/test.1.bert.pt, number of examples: 10256
+[2021-10-09 00:50:06,788 INFO] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at ../temp/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-10-09 00:50:06,881 INFO] loading lineidx: /scratch/summ_data_imgs/vgg_features.lineidx
+[2021-10-09 02:10:09,588 INFO] Calculating Rouge
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=10000, beam_size=5, bert_data_path='../bert_data', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0, 1], label_smoothing=0.1, large=False, load_from_extractive='', log_file='test_logs', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=200, max_pos=512, max_tgt_len=140, min_length=50, mode='validate', model_path='/scratch/new_msmo', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='val_out', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='abs', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='0,1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=2)
+41
+41
+Traceback (most recent call last):
+  File "train.py", line 125, in <module>
+    validate_abs(args, device_id)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/train_abstractive.py", line 140, in validate_abs
+    test_abs(args, device_id, cp, step)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/train_abstractive.py", line 224, in test_abs
+    predictor.translate(test_iter, step)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/models/predictor.py", line 196, in translate
+    rouges = self._report_rouge(gold_path, can_path)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/models/predictor.py", line 205, in _report_rouge
+    results_dict = test_rouge(self.args.temp_dir, can_path, gold_path)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/others/utils.py", line 79, in test_rouge
+    r = pyrouge.Rouge155(temp_dir=temp_dir)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/others/pyrouge.py", line 123, in __init__
+    self.__set_rouge_dir(rouge_dir)
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/others/pyrouge.py", line 439, in __set_rouge_dir
+    self._home_dir = self.__get_rouge_home_dir_from_settings()
+  File "/home/anshul.padhi/msmo_contrastive_loss/PreSumm/src/others/pyrouge.py", line 453, in __get_rouge_home_dir_from_settings
+    with open(self._settings_file) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/anshul.padhi/.pyrouge/settings.ini'

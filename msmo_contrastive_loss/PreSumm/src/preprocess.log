@@ -1,0 +1,352 @@
+[2021-07-24 19:33:05,523 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:05,532 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:05,556 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:33:05,561 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:33:06,043 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:06,071 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:33:06,108 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:06,137 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:33:32,305 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:32,308 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:32,308 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:32,308 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:33:32,339 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:33:32,339 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:33:32,339 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:33:32,341 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:33:33,850 INFO] Processed instances 1
+[2021-07-24 19:33:33,850 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:34,071 INFO] Processed instances 1
+[2021-07-24 19:33:34,071 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:34,303 INFO] Processed instances 1
+[2021-07-24 19:33:34,303 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:34,516 INFO] Processed instances 1
+[2021-07-24 19:33:34,516 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:34,765 INFO] Processed instances 1
+[2021-07-24 19:33:34,765 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:34,981 INFO] Processed instances 1
+[2021-07-24 19:33:34,981 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:35,203 INFO] Processed instances 1
+[2021-07-24 19:33:35,204 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:35,446 INFO] Processed instances 1
+[2021-07-24 19:33:35,447 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:35,671 INFO] Processed instances 1
+[2021-07-24 19:33:35,671 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:35,871 INFO] Processed instances 1
+[2021-07-24 19:33:35,871 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:35,882 INFO] Processed instances 1
+[2021-07-24 19:33:35,882 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:35,888 INFO] Processed instances 1
+[2021-07-24 19:33:35,889 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:36,121 INFO] Processed instances 1
+[2021-07-24 19:33:36,122 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:36,300 INFO] Processed instances 1
+[2021-07-24 19:33:36,300 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:36,354 INFO] Processed instances 1
+[2021-07-24 19:33:36,354 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:36,365 INFO] Processed instances 1
+[2021-07-24 19:33:36,365 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:36,592 INFO] Processed instances 1
+[2021-07-24 19:33:36,593 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:36,736 INFO] Processed instances 1
+[2021-07-24 19:33:36,736 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:36,817 INFO] Processed instances 1
+[2021-07-24 19:33:36,817 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:36,852 INFO] Processed instances 1
+[2021-07-24 19:33:36,852 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:37,056 INFO] Processed instances 1
+[2021-07-24 19:33:37,056 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:37,160 INFO] Processed instances 1
+[2021-07-24 19:33:37,160 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:37,281 INFO] Processed instances 1
+[2021-07-24 19:33:37,281 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:37,282 INFO] Processed instances 1
+[2021-07-24 19:33:37,283 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:37,518 INFO] Processed instances 1
+[2021-07-24 19:33:37,518 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:37,608 INFO] Processed instances 1
+[2021-07-24 19:33:37,609 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:37,732 INFO] Processed instances 1
+[2021-07-24 19:33:37,732 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:37,757 INFO] Processed instances 1
+[2021-07-24 19:33:37,758 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:37,988 INFO] Processed instances 1
+[2021-07-24 19:33:37,988 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:38,044 INFO] Processed instances 1
+[2021-07-24 19:33:38,044 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:38,133 INFO] Processed instances 1
+[2021-07-24 19:33:38,134 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:38,166 INFO] Processed instances 1
+[2021-07-24 19:33:38,167 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:38,220 INFO] Processed instances 1
+[2021-07-24 19:33:38,220 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:38,458 INFO] Processed instances 1
+[2021-07-24 19:33:38,458 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:38,487 INFO] Processed instances 1
+[2021-07-24 19:33:38,487 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:38,610 INFO] Processed instances 1
+[2021-07-24 19:33:38,611 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:38,698 INFO] Processed instances 1
+[2021-07-24 19:33:38,698 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:38,786 INFO] Processed instances 1
+[2021-07-24 19:33:38,786 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:38,923 INFO] Processed instances 1
+[2021-07-24 19:33:38,923 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:38,937 INFO] Processed instances 1
+[2021-07-24 19:33:38,937 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:39,045 INFO] Processed instances 1
+[2021-07-24 19:33:39,046 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:39,172 INFO] Processed instances 1
+[2021-07-24 19:33:39,172 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:39,364 INFO] Processed instances 1
+[2021-07-24 19:33:39,364 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:39,403 INFO] Processed instances 1
+[2021-07-24 19:33:39,403 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:39,440 INFO] Processed instances 1
+[2021-07-24 19:33:39,440 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:39,540 INFO] Processed instances 1
+[2021-07-24 19:33:39,541 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:39,640 INFO] Processed instances 1
+[2021-07-24 19:33:39,641 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:39,819 INFO] Processed instances 1
+[2021-07-24 19:33:39,819 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:39,876 INFO] Processed instances 1
+[2021-07-24 19:33:39,876 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:39,991 INFO] Processed instances 1
+[2021-07-24 19:33:39,991 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:40,084 INFO] Processed instances 1
+[2021-07-24 19:33:40,084 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:40,109 INFO] Processed instances 1
+[2021-07-24 19:33:40,109 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:40,256 INFO] Processed instances 1
+[2021-07-24 19:33:40,256 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:40,343 INFO] Processed instances 1
+[2021-07-24 19:33:40,344 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:40,488 INFO] Processed instances 1
+[2021-07-24 19:33:40,488 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:40,578 INFO] Processed instances 1
+[2021-07-24 19:33:40,578 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:40,703 INFO] Processed instances 1
+[2021-07-24 19:33:40,703 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:40,730 INFO] Processed instances 1
+[2021-07-24 19:33:40,730 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:40,809 INFO] Processed instances 1
+[2021-07-24 19:33:40,809 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:40,930 INFO] Processed instances 1
+[2021-07-24 19:33:40,930 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:41,047 INFO] Processed instances 1
+[2021-07-24 19:33:41,047 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:41,142 INFO] Processed instances 1
+[2021-07-24 19:33:41,142 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:41,301 INFO] Processed instances 1
+[2021-07-24 19:33:41,301 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:41,369 INFO] Processed instances 1
+[2021-07-24 19:33:41,369 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:41,372 INFO] Processed instances 1
+[2021-07-24 19:33:41,372 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:41,540 INFO] Processed instances 1
+[2021-07-24 19:33:41,540 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:41,573 INFO] Processed instances 1
+[2021-07-24 19:33:41,573 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:41,789 INFO] Processed instances 1
+[2021-07-24 19:33:41,789 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:41,863 INFO] Processed instances 1
+[2021-07-24 19:33:41,863 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:42,027 INFO] Processed instances 1
+[2021-07-24 19:33:42,027 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:42,032 INFO] Processed instances 1
+[2021-07-24 19:33:42,032 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:42,105 INFO] Processed instances 1
+[2021-07-24 19:33:42,106 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:42,261 INFO] Processed instances 1
+[2021-07-24 19:33:42,262 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:42,357 INFO] Processed instances 1
+[2021-07-24 19:33:42,357 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:42,467 INFO] Processed instances 1
+[2021-07-24 19:33:42,467 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:42,502 INFO] Processed instances 1
+[2021-07-24 19:33:42,502 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:42,740 INFO] Processed instances 1
+[2021-07-24 19:33:42,740 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:42,794 INFO] Processed instances 1
+[2021-07-24 19:33:42,794 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:42,827 INFO] Processed instances 1
+[2021-07-24 19:33:42,827 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:42,903 INFO] Processed instances 1
+[2021-07-24 19:33:42,903 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:42,968 INFO] Processed instances 1
+[2021-07-24 19:33:42,968 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:43,211 INFO] Processed instances 1
+[2021-07-24 19:33:43,211 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:43,294 INFO] Processed instances 1
+[2021-07-24 19:33:43,294 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:43,346 INFO] Processed instances 1
+[2021-07-24 19:33:43,346 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:43,442 INFO] Processed instances 1
+[2021-07-24 19:33:43,442 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:43,551 INFO] Processed instances 1
+[2021-07-24 19:33:43,551 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:43,677 INFO] Processed instances 1
+[2021-07-24 19:33:43,677 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:43,729 INFO] Processed instances 1
+[2021-07-24 19:33:43,729 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:43,790 INFO] Processed instances 1
+[2021-07-24 19:33:43,791 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:43,912 INFO] Processed instances 1
+[2021-07-24 19:33:43,912 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:44,148 INFO] Processed instances 1
+[2021-07-24 19:33:44,148 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:44,200 INFO] Processed instances 1
+[2021-07-24 19:33:44,200 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:44,226 INFO] Processed instances 1
+[2021-07-24 19:33:44,226 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:44,244 INFO] Processed instances 1
+[2021-07-24 19:33:44,244 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:44,386 INFO] Processed instances 1
+[2021-07-24 19:33:44,387 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:44,622 INFO] Processed instances 1
+[2021-07-24 19:33:44,622 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:44,687 INFO] Processed instances 1
+[2021-07-24 19:33:44,687 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:44,718 INFO] Processed instances 1
+[2021-07-24 19:33:44,718 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:44,852 INFO] Processed instances 1
+[2021-07-24 19:33:44,852 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:44,922 INFO] Processed instances 1
+[2021-07-24 19:33:44,922 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:45,083 INFO] Processed instances 1
+[2021-07-24 19:33:45,083 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:45,122 INFO] Processed instances 1
+[2021-07-24 19:33:45,122 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:45,149 INFO] Processed instances 1
+[2021-07-24 19:33:45,149 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:45,320 INFO] Processed instances 1
+[2021-07-24 19:33:45,320 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:45,551 INFO] Processed instances 1
+[2021-07-24 19:33:45,552 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:45,569 INFO] Processed instances 1
+[2021-07-24 19:33:45,569 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:45,583 INFO] Processed instances 1
+[2021-07-24 19:33:45,583 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:45,656 INFO] Processed instances 1
+[2021-07-24 19:33:45,657 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:45,790 INFO] Processed instances 1
+[2021-07-24 19:33:45,790 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:46,007 INFO] Processed instances 1
+[2021-07-24 19:33:46,007 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:46,021 INFO] Processed instances 1
+[2021-07-24 19:33:46,021 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:46,021 INFO] Processed instances 1
+[2021-07-24 19:33:46,021 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:46,255 INFO] Processed instances 1
+[2021-07-24 19:33:46,255 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:46,309 INFO] Processed instances 1
+[2021-07-24 19:33:46,309 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:46,443 INFO] Processed instances 1
+[2021-07-24 19:33:46,443 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:46,493 INFO] Processed instances 1
+[2021-07-24 19:33:46,493 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:46,508 INFO] Processed instances 1
+[2021-07-24 19:33:46,508 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:46,735 INFO] Processed instances 1
+[2021-07-24 19:33:46,736 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:46,886 INFO] Processed instances 1
+[2021-07-24 19:33:46,886 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:46,950 INFO] Processed instances 1
+[2021-07-24 19:33:46,950 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:46,963 INFO] Processed instances 1
+[2021-07-24 19:33:46,963 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:46,980 INFO] Processed instances 1
+[2021-07-24 19:33:46,980 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:47,202 INFO] Processed instances 1
+[2021-07-24 19:33:47,202 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:47,326 INFO] Processed instances 1
+[2021-07-24 19:33:47,326 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:47,412 INFO] Processed instances 1
+[2021-07-24 19:33:47,412 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:47,435 INFO] Processed instances 1
+[2021-07-24 19:33:47,435 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:47,630 INFO] Processed instances 1
+[2021-07-24 19:33:47,630 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:47,675 INFO] Processed instances 1
+[2021-07-24 19:33:47,675 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:47,765 INFO] Processed instances 1
+[2021-07-24 19:33:47,765 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:47,849 INFO] Processed instances 1
+[2021-07-24 19:33:47,849 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:47,908 INFO] Processed instances 1
+[2021-07-24 19:33:47,908 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:48,158 INFO] Processed instances 1
+[2021-07-24 19:33:48,158 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:48,207 INFO] Processed instances 1
+[2021-07-24 19:33:48,207 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:33:48,288 INFO] Processed instances 1
+[2021-07-24 19:33:48,288 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:33:48,348 INFO] Processed instances 1
+[2021-07-24 19:33:48,348 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:33:48,388 INFO] Processed instances 1
+[2021-07-24 19:33:48,388 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:48,624 INFO] Processed instances 1
+[2021-07-24 19:33:48,624 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:33:48,644 INFO] Processed instances 1
+[2021-07-24 19:33:48,644 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:36:19,762 INFO] Ignore ../bert_data/train.1.bert.pt
+[2021-07-24 19:36:19,762 INFO] Ignore ../bert_data/train.0.bert.pt
+[2021-07-24 19:36:19,763 INFO] Ignore ../bert_data/train.3.bert.pt
+[2021-07-24 19:36:19,763 INFO] Ignore ../bert_data/train.2.bert.pt
+[2021-07-24 19:36:30,430 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:36:30,431 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:36:30,437 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:36:30,461 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:36:30,461 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:36:30,468 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:36:30,469 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:36:30,505 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:37:34,119 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:37:34,120 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:37:34,131 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:37:34,132 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:37:34,150 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:37:34,150 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:37:34,167 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:37:34,167 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:39:47,283 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:39:47,283 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:39:47,286 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:39:47,315 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:39:47,315 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:39:47,317 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:39:47,557 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:39:47,595 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:40:08,042 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:40:08,049 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:40:08,053 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:40:08,054 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:40:08,073 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:40:08,080 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:40:08,086 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:40:08,088 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:40:49,107 INFO] Processed instances 9999
+[2021-07-24 19:40:49,108 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:41:29,571 INFO] Processed instances 19996
+[2021-07-24 19:41:29,572 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:41:29,960 INFO] Processed instances 19999
+[2021-07-24 19:41:29,960 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:42:09,216 INFO] Processed instances 29990
+[2021-07-24 19:42:09,217 INFO] Saving to ../bert_data/train.0.bert.pt
+[2021-07-24 19:53:09,791 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:53:09,798 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:53:09,803 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:53:09,806 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/anshul.padhi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-07-24 19:53:09,822 INFO] Processing /scratch/full_data_new/train.1.json
+[2021-07-24 19:53:09,833 INFO] Processing /scratch/full_data_new/train.2.json
+[2021-07-24 19:53:09,838 INFO] Processing /scratch/full_data_new/train.0.json
+[2021-07-24 19:53:09,840 INFO] Processing /scratch/full_data_new/train.3.json
+[2021-07-24 19:53:50,573 INFO] Processed instances 9999
+[2021-07-24 19:53:50,573 INFO] Saving to ../bert_data/train.3.bert.pt
+[2021-07-24 19:54:30,759 INFO] Processed instances 19996
+[2021-07-24 19:54:30,759 INFO] Saving to ../bert_data/train.2.bert.pt
+[2021-07-24 19:54:31,448 INFO] Processed instances 19999
+[2021-07-24 19:54:31,449 INFO] Saving to ../bert_data/train.1.bert.pt
+[2021-07-24 19:55:10,384 INFO] Processed instances 29990
+[2021-07-24 19:55:10,384 INFO] Saving to ../bert_data/train.0.bert.pt

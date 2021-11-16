@@ -1,0 +1,4 @@
+[2021-08-14 19:41:42,968 INFO] loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home2/akshat.gahoi/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+[2021-08-14 19:41:43,022 INFO] Processing ../json_data/valid.1.json
+[2021-08-14 19:42:20,721 INFO] Processed instances 10256
+[2021-08-14 19:42:20,722 INFO] Saving to ../bert_data/valid.1.bert.pt
