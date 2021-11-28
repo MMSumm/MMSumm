@@ -4,8 +4,11 @@
 
 This is the repo for the paper "MMSumm: Multimodal Summarization via Semantic Reranking and Cross-Modal Guidance"
 
-We propose a multimodal summarization architecture which takes as input an article with multiple
-images and outputs a textual summary paired with the most relevant image.
+We propose a multimodal summarization architecture which takes as input an article with multiple images and outputs a textual summary paired with the most relevant image.
+
+
+
+![Sample Summary](https://github.com/MMSumm/MMSummACL/blob/main/imgs/sample.jpeg?raw=true)
 
 Below are the steps for data preprocessing and model training/inference.
 
