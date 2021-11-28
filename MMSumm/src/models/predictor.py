@@ -322,7 +322,6 @@ class Translator(object):
 
         for step in range(max_length):
             decoder_input = alive_seq[:, -1].view(1, -1)
-            #print('lol')
             # Decoder forward.
             decoder_input = decoder_input.transpose(0,1)
             #print('entering decoder')
