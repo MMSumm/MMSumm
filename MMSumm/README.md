@@ -1,4 +1,4 @@
-#MMSumm
+# MMSumm
 
 Architecture structure borrowed from PreSumm. Documentation below.
 
