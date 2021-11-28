@@ -1,3 +1,6 @@
+# Convert data to json dictionaries
+# Provide path to MSMO train data
+
 import os
 from nltk.tokenize import word_tokenize
 from nltk.tokenize import sent_tokenize
@@ -43,6 +46,8 @@ for idx in tqdm(range(len(art_dir))):
         if fname[:-4] in i:
             imgs.append(i)
     k=len(imgs)
+
+    # Filter out images if > 7
     for i in range(7-k):
         imgs.append('')
     data_pt = {'src':src, 'smp':smp, 'trg':trg, 'imgs':imgs}

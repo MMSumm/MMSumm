@@ -1,3 +1,6 @@
+# Loader for the MSMO dataset
+# Requires preprocessing to include the simplified sentences and images list
+
 import pandas as pd 
 import cv2
 from ast import literal_eval

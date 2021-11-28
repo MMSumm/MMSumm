@@ -1,3 +1,7 @@
+# Scorer file
+#
+# Get image-sentence scores from OSCAR
+
 from transformers.pytorch_transformers import BertModel, BertTokenizer, BertConfig
 import torch
 import torch.nn as nn

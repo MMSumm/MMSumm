@@ -1,3 +1,6 @@
+# Sentence simplification task before feeding data into OSCAR.
+# Change paths to the location for MSMO dataset
+
 import pandas as pd 
 from ast import literal_eval
 from torch.utils.data import Dataset, DataLoader
@@ -134,7 +137,3 @@ for idx in tqdm(range(len(df['article']))):
 
         writeF = open(write_file, 'w')
         writeF.write(text1)
-
-        
-        
-

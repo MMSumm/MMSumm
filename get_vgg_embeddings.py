@@ -1,3 +1,6 @@
+# File to produce VGG-19 embeddings
+# Provide path to images
+
 from keras.applications.vgg19 import VGG19
 from keras.applications.vgg19 import preprocess_input
 from keras.preprocessing import image
@@ -26,7 +29,6 @@ def get_image_embed(fname):
     return embed
 
 
-#prefix = '/scratch/summ_data/full_data/img/'
 prefix = '/scratch/full_data_test/test_data/img/'
 imgs = os.scandir(prefix)
 

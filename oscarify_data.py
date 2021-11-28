@@ -1,3 +1,6 @@
+# Get OSCAR scores for image-sentence pairs.
+# Data split between 4 GPUs, manage partitions accordingly
+
 import json
 import os
 import torch
@@ -25,7 +28,7 @@ partition = int(len(files)/4) + 1
 start = partition*FILE_NUM
 end = start + partition
 
-#files = files[start:end]
+files = files[start:end]
 
 for file in tqdm(files):
     datapoint = json.load(open(file, 'r'))
